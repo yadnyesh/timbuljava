@@ -32,6 +32,7 @@ public class Main {
                break;
            default:
                System.out.println("Could not find A, B, C, D, or E");
+               break;
        }
 
     }
