@@ -37,7 +37,10 @@ public class Main {
 
        String month = "January";
        switch(month){
-           case: "January"
+           case "January":
+               System.out.println("Jan");
+           case "June":
+               System.out.println("Jun");
        }
 
 
