@@ -39,7 +39,7 @@ public class Main {
        switch(month.toLowerCase()){
            case "january":
                System.out.println("Jan");
-               default;
+               break;
            case "june":
                System.out.println("Jun");
 
