@@ -11,6 +11,10 @@ public class Main {
         System.out.println(calculateInterest(10000.0, 5.0));
        }
 
+    for(int i=0; i<5, ) {
+        System.out.println("Loop " + i + " hello");
+    }
+
     public static double calculateInterest(double amount, double interestRate){
         return (amount*(interestRate/100));
     }
