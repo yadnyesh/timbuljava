@@ -23,10 +23,13 @@ public class Main {
        switch (charValue){
            case 'A':
                System.out.println("A was found");
+               break;
            case 'B':
                System.out.println("B was found");
            case 'C':case 'D' :case 'E':
                System.out.println("C, D or E was found");
+           default:
+               System.out.println("Could not find A, B, C, D, or E");
        }
 
     }
