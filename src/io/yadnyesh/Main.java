@@ -35,6 +35,12 @@ public class Main {
                break;
        }
 
+       String month = "January";
+       switch(month){
+           case: "January"
+       }
+
+
     }
 
 
