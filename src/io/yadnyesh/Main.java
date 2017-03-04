@@ -29,6 +29,7 @@ public class Main {
                break;
            case 'C':case 'D' :case 'E':
                System.out.println("C, D or E was found");
+               break;
            default:
                System.out.println("Could not find A, B, C, D, or E");
        }
