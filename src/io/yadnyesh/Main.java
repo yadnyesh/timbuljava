@@ -19,6 +19,16 @@ public class Main {
                 break;
        }
 
+       char charValue = 'A';
+       switch (charValue){
+           case 'A':
+               System.out.println("A was found");
+           case 'B':
+               System.out.println("B was found");
+           case 'C':case 'D' :case 'E':
+               System.out.println("C, D or E was found");
+       }
+
     }
 
 
