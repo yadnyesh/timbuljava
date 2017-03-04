@@ -42,7 +42,9 @@ public class Main {
                break;
            case "june":
                System.out.println("Jun");
-
+               break;
+           default:
+               System.out.println("Not Sure");
        }
 
 
