@@ -19,7 +19,7 @@ public class Main {
                 break;
        }
 
-       char charValue = 'A';
+       char charValue = 'B';
        switch (charValue){
            case 'A':
                System.out.println("A was found");
