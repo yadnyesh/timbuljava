@@ -26,6 +26,7 @@ public class Main {
                break;
            case 'B':
                System.out.println("B was found");
+               break;
            case 'C':case 'D' :case 'E':
                System.out.println("C, D or E was found");
            default:
