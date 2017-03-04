@@ -35,7 +35,7 @@ public class Main {
                break;
        }
 
-       String month = "January";
+       String month = "June";
        switch(month.toLowerCase()){
            case "january":
                System.out.println("Jan");
@@ -45,7 +45,7 @@ public class Main {
                break;
            default:
                System.out.println("Not Sure");
-               breack;
+               break;
        }
 
 
