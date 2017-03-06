@@ -6,14 +6,14 @@ package io.yadnyesh;
 public class Main {
     public static void main (String args[]){
         System.out.println(calculateInterest(10000.0, 2));
-        System.out.println(calculateInterest(10000.0, 3.0));
+        System.out.println(calculateInterest(10000.0, 3));
         System.out.println(calculateInterest(10000, 4));
-        System.out.println(calculateInterest(10000.0, 5.0));
+        System.out.println(calculateInterest(10000.0, 5));
 
         for(int i=0; i<5; i++) {
             System.out.println("Loop " + i + " hello");
         }
-        
+
         for (int i=9; i > 1; i--){
             System.out.println(String.format("%.2f", calculateInterest(10000.0, i)));
         }
