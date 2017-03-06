@@ -13,7 +13,6 @@ public class Main {
         for(int i=0; i<5; i++) {
             System.out.println("Loop " + i + " hello");
         }
-
         
         for (int i=9; i > 1; i--){
             System.out.println(String.format("%.2f", calculateInterest(10000.0, i)));
