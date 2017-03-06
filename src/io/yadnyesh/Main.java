@@ -18,6 +18,7 @@ public class Main {
             System.out.println(String.format("%.2f", calculateInterest(10000.0, i)));
         }
     }
+
     
 
     public static double calculateInterest(double amount, double interestRate){
