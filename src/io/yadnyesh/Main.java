@@ -22,6 +22,6 @@ public class Main {
 
 
     public static double calculateInterest(double amount, double interestRate){
-        return (amount*(interestRate/1000));
+        return (amount*(interestRate/100));
     }
 }
