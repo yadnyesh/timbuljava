@@ -6,7 +6,7 @@ package io.yadnyesh;
 public class Main {
     public static void main (String args[]){
         System.out.println(calculateInterest(10000.0, 2));
-        System.out.println(calculateInterest(10000, 3.0));
+        System.out.println(calculateInterest(10000.00, 3.0));
         System.out.println(calculateInterest(10000, 4));
         System.out.println(calculateInterest(10000.0, 5.0));
 
