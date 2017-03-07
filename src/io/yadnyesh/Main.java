@@ -14,8 +14,6 @@ public class Main {
         BankAccount account1 = new BankAccount();
         BankAccount account2 = new BankAccount(12345, 0.00, "Yadnyesh", "yadnyesh.juvekar@gmail.com", "34534");
 
-        account1.getBalance();
-        account1.deposit(200);
         System.out.println("The Balance after deposit is " + account1.getBalance());
 
         account2.getBalance();
