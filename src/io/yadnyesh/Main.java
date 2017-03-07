@@ -12,7 +12,7 @@ public class Main {
 //        //System.out.println("Model is " + porsche.getModel());
 
         BankAccount account1 = new BankAccount();
-        BankAccount account2 = new BankAccount();
+        BankAccount account2 = new BankAccount(12345, 0.00, "Yadnyesh", "yadnyesh.juvekar@gmail.com", "34534");
 
         account1.getBalance();
         account1.deposit(200);
