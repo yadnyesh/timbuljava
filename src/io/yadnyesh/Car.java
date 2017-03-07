@@ -3,26 +3,18 @@ package io.yadnyesh;
 /**
  * Created by z063407 on 3/7/17.
  */
-public class Car {
+
+//Car is a Vehicle --> Inheritance
+//Car has steering --> composition
+
+public class Car extends Vehicle{
 
     private int doors;
-    private int wheels;
-    private String model;
-    private String engine;
-    private String color;
+    private int engineCapacity;
 
-    public void setModel(String model) {
-        String validModel = model.toLowerCase();
-        if(validModel.equals("carrera") || validModel.equals("commodore")) {
-            this.model = model;
-        } else {
-            this.model = "Unknown";
-        }
-
+    public Car(String name, int doors, int engineCapacity) {
+        super(name);
+        this.doors = doors;
+        this.engineCapacity = engineCapacity;
     }
-
-    public String getModel() {
-        return this.model;
-    }
-
 }
