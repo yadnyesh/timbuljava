@@ -50,13 +50,13 @@ public class BankAccount {
         this.phoneNumber = phoneNumber;
     }
 
-    public double deposit(double depositAmount) {
+    public void deposit(double depositAmount) {
         double totalBalance = this.getBalance() + depositAmount;
         this.setBalance(totalBalance);
         System.out.println("Total Balance after deposit is :" + this.getBalance());
     }
 
-    public double withdraw (double withdrawAmount) {
+    public void withdraw (double withdrawAmount) {
         double currentBalance = this.getBalance();
         if (currentBalance >= withdrawAmount) {
             this.setBalance(currentBalance - withdrawAmount);
