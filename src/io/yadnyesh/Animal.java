@@ -5,7 +5,7 @@ package io.yadnyesh;
  */
 public class Animal {
 
-    private String name:
+    private String name;
     private int brain;
     private int body;
     private int size;
@@ -17,6 +17,14 @@ public class Animal {
         this.body = body;
         this.size = size;
         this.weight = weight;
+    }
+
+    public void eat() {
+
+    }
+
+    public void move() {
+
     }
 
     public String getName() {
