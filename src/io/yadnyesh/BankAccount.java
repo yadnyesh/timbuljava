@@ -50,17 +50,23 @@ public class BankAccount {
         this.phoneNumber = phoneNumber;
     }
 
+    public double  printBalance (){
+       return this.getBalance();
+    }
+
     public void deposit(double depositAmount) {
         double totalBalance = this.getBalance() + depositAmount;
         this.setBalance(totalBalance);
-        System.out.println("Total Balance after deposit is :" + this.getBalance());
+        //System.out.println("Total Balance after deposit is :" + this.getBalance());
     }
 
     public void withdraw (double withdrawAmount) {
         double currentBalance = this.getBalance();
         if (currentBalance >= withdrawAmount) {
             this.setBalance(currentBalance - withdrawAmount);
+        } else {
+            System.out.println("Insufficient Balance");
         }
-        System.out.println("Total Balance after withdrawal is :" + this.getBalance());
+        //System.out.println("Total Balance after withdrawal is :" + this.getBalance());
     }
 }
