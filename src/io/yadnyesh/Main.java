@@ -5,14 +5,22 @@ package io.yadnyesh;
  */
 public class Main {
     public static void main (String args[]) {
-        Dimensions dimensions = new Dimensions(20, 20, 5);
-        Case theCase = new Case("220B", "Dell", "220", dimensions);
+//        Player player = new Player();
+//        player.name = "Tim";
+//        player.health = 20;
+//        player.weapon = "sword";
+//
+//        int damage = 10;
+//        player.loseHealth(damage);
+//        System.out.println("Remaining Health: " + player.healthRemaining());
+//
+//        damage = 11;
+//        player.loseHealth(damage);
+//        System.out.println("Remaining Health: " + player.healthRemaining());
 
-        Monitor theMonitor = new Monitor("27 inch", "Acer", 27, new Resolution(2540, 1440));
 
-        Motherboard theMotherboard = new Motherboard("BJ-200", "Asus", 4, 6, "v2.44");
+        EnhancedPlayer player = new EnhancedPlayer("tim", 200, "sword");
+        System.out.println("Initial health is " + player.getHealth());
 
-        PC thePC = new PC(theCase, theMonitor, theMotherboard);
-        thePC.getMonitor().drawPixel(1500, 1200, "red");
     }
 }
