@@ -20,7 +20,7 @@ public class Main {
 
 
         EnhancedPlayer player = new EnhancedPlayer("tim", 200, "sword");
-        System.out.println("Initial health is " + player.getHealth();
+        System.out.println("Initial health is " + player.getHealth());
 
     }
 }
