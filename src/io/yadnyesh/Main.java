@@ -3,27 +3,27 @@ package io.yadnyesh;
 /**
  * Created by z063407 on 3/4/17.
  */
+
+import java.util.Scanner;
+
 public class Main {
+
+    private static Scanner scanner = new Scanner(System.in);
+
     public static void main (String args[]) {
+        int[] myIntegers = getIntegers(5);
+        for(int i = 0; i < myIntegers.length; i++) {
+            System.out.println("Element " + i + "is : " + myIntegers[i]);
+        }
+    }
 
-        Hamburger hamburger = new Hamburger("Basic", "Sausage", 3.56, "White");
-        double price = hamburger.itemizeHamburger();
+    public static int[] getIntegers(int number) {
+        System.out.println("Enter " + number + " of integer values.");
+        int[] values = new int[number];
 
-        hamburger.addHamburgerAddition1("Tomato", 0.27);
-        hamburger.addHamburgerAddition2("Lettuce", 0.75);
-        hamburger.addHamburgerAddition3("Cheese", 1.12);
-
-        price = hamburger.itemizeHamburger();
-        System.out.println("Total Burger Price is: $" + price);
-
-        HealthyBurger healthyBurger = new HealthyBurger("Bacon", 5.67);
-        healthyBurger.addHamburgerAddition1("Egg", 5.43);
-        healthyBurger.addHealthAddition1("Lentils", 3.41);
-        healthyBurger.itemizeHamburger();
-        System.out.println("Total Healthy Burger Price is: $" + healthyBurger.itemizeHamburger());
-
-        DeluxeBurger deluxeBurger = new DeluxeBurger();
-        deluxeBurger.itemizeHamburger();
-
+        for (int i = 0; i < values.length; i++) {
+            values[i] = scanner.nextInt();
+        }
+        return values;
     }
 }
