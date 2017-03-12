@@ -66,9 +66,10 @@ public class Bank {
                     }
                 }
             }
+            return true;
+        } else {
+            return false;
         }
-
-        return false;
     }
 
 }
