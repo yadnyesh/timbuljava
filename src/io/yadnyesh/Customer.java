@@ -1,11 +1,10 @@
 package io.yadnyesh;
 
-import java.util.AbstractList;
 import java.util.ArrayList;
 
 public class Customer {
     private String name;
-    private AbstractList<Double> transactions;
+    private ArrayList<Double> transactions;
 
     public Customer(String name, double initialAmount) {
         this.name = name;
@@ -26,11 +25,11 @@ public class Customer {
         this.name = name;
     }
 
-    public AbstractList<Double> getTransactions() {
+    public ArrayList<Double> getTransactions() {
         return transactions;
     }
 
-    public void setTransactions(AbstractList<Double> transactions) {
+    public void setTransactions(ArrayList<Double> transactions) {
         this.transactions = transactions;
     }
 }
