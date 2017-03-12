@@ -37,12 +37,15 @@ public class Main {
         ArrayList<Integer> intArrayList = new ArrayList<>();
 
         for (int i = 0; i <= 10; i++) {
-            intArrayList.add(Integer.valueOf(i));
+            //intArrayList.add(Integer.valueOf(i));
+            intArrayList.add(i);
         }
 
         for (int i = 0; i <= 10; i++) {
-            System.out.println(i + " --> " +  intArrayList.get(i).intValue()) ;
+            System.out.println(i + " --> " +  intArrayList.get(i)) ;
         }
+
+        //Integer myIntValue = 56;
 
 
     }
