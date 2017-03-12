@@ -31,6 +31,10 @@ public class Main {
         ArrayList<IntClass> intClassArrayList = new ArrayList<IntClass>();
         intClassArrayList.add(new IntClass(54));
 
+        Integer integer = new Integer(54);
+
+        
+
     }
 }
 
