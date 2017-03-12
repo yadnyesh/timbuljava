@@ -42,7 +42,7 @@ public class Main {
         }
 
         for (int i = 0; i <= 10; i++) {
-            System.out.println(i + " --> " +  intArrayList.get(i)) ;
+            //System.out.println(i + " --> " +  intArrayList.get(i)) ;
         }
 
         ArrayList<Double> myDoubleValues = new ArrayList<>();
