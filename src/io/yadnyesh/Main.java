@@ -42,10 +42,17 @@ public class Main {
         }
 
         for (int i = 0; i <= 10; i++) {
-            System.out.println(i + " --> " +  intArrayList.get(i)) ;
+            //System.out.println(i + " --> " +  intArrayList.get(i)) ;
         }
 
-        //Integer myIntValue = 56;
+        ArrayList<Double> myDoubleValues = new ArrayList<>();
+        for (double dbl=0.0;  dbl <=10; dbl += 0.5) {
+            myDoubleValues.add(Double.valueOf(dbl));
+        }
+
+        for (int i = 0; i < myDoubleValues.size(); i++) {
+            System.out.println(i + " --> " + myDoubleValues.get(i).doubleValue());
+        }
 
 
     }
