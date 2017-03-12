@@ -32,8 +32,18 @@ public class Main {
         intClassArrayList.add(new IntClass(54));
 
         Integer integer = new Integer(54);
+        Double doubleValue = new Double(12.25);
 
-        
+        ArrayList<Integer> intArrayList = new ArrayList<>();
+
+        for (int i = 0; i <= 10; i++) {
+            intArrayList.add(Integer.valueOf(i));
+        }
+
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(i + " --> " +  intArrayList.get(i).intValue()) ;
+        }
+
 
     }
 }

@@ -1,7 +1,5 @@
 package io.threads;
 
-import java.util.Random;
-
 /**
  * Created by z063407 on 3/9/17.
  */
@@ -9,8 +7,8 @@ import java.util.Random;
 
 public class App {
 
-    public static void main(String[] args){
-        System.out.println(new Random().nextInt(100));
-    }
+//    public static void main(String[] args){
+//        System.out.println(new Random().nextInt(100));
+//    }
 
 }
