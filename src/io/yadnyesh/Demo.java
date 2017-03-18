@@ -6,6 +6,14 @@ import java.util.ListIterator;
 import java.util.Scanner;
 
 public class Demo {
+    private static void printList(LinkedList<String> linkedList) {
+        Iterator<String> i = linkedList.iterator();
+        while (i.hasNext()){
+            System.out.println("Now Visiting " + i.next());
+        }
+        System.out.println("==================================END=================================");
+    }
+
     public static void main(String[] args) {
         LinkedList<String> placesToVisit = new LinkedList<>();
         addInOrder(placesToVisit, "Sydney");
@@ -36,14 +44,6 @@ public class Demo {
 //
 //        printList(placesToVisit);
         visit(placesToVisit);
-    }
-
-    private static void printList(LinkedList<String> linkedList) {
-        Iterator<String> i = linkedList.iterator();
-        while (i.hasNext()){
-            System.out.println("Now Visiting " + i.next());
-        }
-        System.out.println("==================================END=================================");
     }
 
     private static boolean addInOrder(LinkedList linkedList, String newCity) {
