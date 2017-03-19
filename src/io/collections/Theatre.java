@@ -1,7 +1,6 @@
 package io.collections;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -28,29 +27,14 @@ public class Theatre {
     }
 
     public boolean reserveSeat(String seatNumber) {
-        Seat requestedSeat = new Seat(seatNumber);
-        int foundSeat = Collections.binarySearch(seats, requestedSeat, null);
-        if(foundSeat >= 0) {
-            return seats.get(foundSeat).reserve();
-        } else {
-            System.out.println("There is not seat");
-            return false;
-        }
+        int low = 0;
+        int high = seats.size()-1;
+        int mid = (low + high) / 2;
+        Seat midVal = seats.get(mid);
 
-//        for(Seat seat : seats) {
-//            System.out.print(".");
-//            if(seat.getSeatNumber().equals(seatNumber)) {
-//                requestedSeat = seat;
-//                break;
-//            }
-//        }
-//
-//        if(requestedSeat == null){
-//            System.out.println("There is no seat :" + seatNumber);
-//            return false;
-//        }
-//
-//        return requestedSeat.reserve();
+
+        System.out.println("There is no seat " + seatNumber);
+        return false;
     }
 
     //for testing
