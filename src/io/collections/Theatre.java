@@ -1,6 +1,7 @@
 package io.collections;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by z063407 on 3/19/17.
@@ -34,7 +35,7 @@ public class Theatre {
             }
         }
 
-        if(requestedSeat = null){
+        if(requestedSeat == null){
             System.out.println("There is no seat :" + seatNumber);
             return false;
         }
@@ -49,5 +50,70 @@ public class Theatre {
         }
     }
 
+    private class Seat {
+        private final String seatNumber;
+        private boolean reserved = false;
+
+        public Seat(String seatNumber) {
+            this.seatNumber = seatNumber;
+        }
+
+        public boolean reserve() {
+            if(!this.reserved) {
+                this.reserved = true;
+                System.out.println("Seat " + seatNumber + " reserved");
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        public boolean cancel() {
+            if(this.reserved){
+                this.reserved = false;
+                System.out.println("Reservation of seat " + seatNumber + " cancelled");
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        public String getSeatNumber() {
+            return seatNumber;
+        }
+    }
+
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
