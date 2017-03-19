@@ -24,7 +24,7 @@ public class Demo {
         addInOrder(placesToVisit, "Adelaide");
 
         addInOrder(placesToVisit, "Adelaide");
-        addInOrder(placesToVisit, "Darwin");
+        addInOrder(placesToVisit, "Delhis");
 
 //        placesToVisit.add("Sydney");
 //        placesToVisit.add("Melbourne");
