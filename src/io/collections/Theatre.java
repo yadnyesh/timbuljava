@@ -31,7 +31,15 @@ public class Theatre {
         int high = seats.size()-1;
         int mid = (low + high) / 2;
         Seat midVal = seats.get(mid);
+        int cmp = midVal.getSeatNumber().compareTo(seatNumber);
 
+        if (cmp < 0) {
+            low = mid +1;
+        } else if (cmp > 0) {
+            high = mid -1;
+        } else {
+            return seats.get(mid).reserve();
+        }
 
         System.out.println("There is no seat " + seatNumber);
         return false;
