@@ -1,14 +1,14 @@
 package io.collections;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
+import java.util.LinkedHashSet;
 
 /**
  * Created by z063407 on 3/19/17.
  */
 public class Theatre {
     private final String theatreName;
-    private List<Seat> seats = new ArrayList<>();
+    private Collection<Seat> seats = new LinkedHashSet<>();
 
     public Theatre(String theatreName, int numRows, int seatPerRow) {
         this.theatreName = theatreName;
