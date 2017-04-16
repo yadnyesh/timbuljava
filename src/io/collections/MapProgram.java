@@ -15,6 +15,8 @@ public class MapProgram {
         languages.put("BASIC", "Beginners All purpose symbolic instruction code");
         languages.put("Lisp", "There lies madness");
 
+
+        languages.replace("Java", "Still trying to learn it");
         System.out.println(languages.containsKey("Java"));
         System.out.println(languages.get("Java"));
 
