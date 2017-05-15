@@ -18,4 +18,10 @@ public class Student {
     public void setRegistrationNumber(String registrationNumber) {
         this.registrationNumber = registrationNumber;
     }
+
+    public boolean equals(Object o) {
+        if(o != null && o instanceof Student) {
+            
+        }
+    }
 }
