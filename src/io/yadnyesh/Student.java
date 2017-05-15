@@ -21,7 +21,10 @@ public class Student {
 
     public boolean equals(Object o) {
         if(o != null && o instanceof Student) {
-            
+            String regNumber = ((Student) o).getRegistrationNumber();
+            if(regNumber != null && regNumber.equals(this.getRegistrationNumber())){
+                return true;
+            }
         }
     }
 }
