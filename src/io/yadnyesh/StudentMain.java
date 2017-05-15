@@ -17,6 +17,8 @@ public class StudentMain {
 
         studentsReport.put(s, new ReportCard());
         studentsReport.put(s2, new ReportCard());
+
+        System.out.println(studentsReport.size());
     }
 
 }
