@@ -20,6 +20,7 @@ public class Student {
     }
 
     public boolean equals(Object o) {
+        System.out.println("From Map");
         if(o != null && o instanceof Student) {
             String regNumber = ((Student) o).getRegistrationNumber();
             if(regNumber != null && regNumber.equals(this.getRegistrationNumber())){
@@ -30,6 +31,7 @@ public class Student {
     }
 
     public int hashCode() {
+        System.out.println("in HashCode From Map");
         return this.getRegistrationNumber().hashCode();
     }
 
