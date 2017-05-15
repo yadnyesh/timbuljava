@@ -1,6 +1,7 @@
 package io.yadnyesh;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by z063407 on 5/15/17.
@@ -12,7 +13,10 @@ public class StudentMain {
 
         System.out.println(s.equals(s2));
 
-        Map <Student, ReportCard> studentsReport = new HashMap<Student, ReportCard>();
+        Map<Student, ReportCard> studentsReport = new HashMap<Student, ReportCard>();
+
+        studentsReport.put(s, new ReportCard());
+        studentsReport.put(s2, new ReportCard());
     }
 
 }
