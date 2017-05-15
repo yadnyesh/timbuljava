@@ -50,8 +50,10 @@ public class StockItem implements Comparable<StockItem>{
 
         if (o == null || this.getClass() != o.getClass()) return false;
 
-        StockItem stockItem = (StockItem) o;
+        String objName = ((StockItem) o).getName();
+        return this.name.equals(objName);
 
+//        StockItem stockItem = (StockItem) o;
 //        if (Double.compare(stockItem.price, price) != 0) return false;
 //        if (quantityStock != stockItem.quantityStock) return false;
 //        return name != null ? name.equals(stockItem.name) : stockItem.name == null;
@@ -59,12 +61,31 @@ public class StockItem implements Comparable<StockItem>{
 
     @Override
     public int hashCode() {
-        int result;
-        long temp;
-        result = name != null ? name.hashCode() : 0;
-        temp = Double.doubleToLongBits(price);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        result = 31 * result + quantityStock;
-        return result;
+        return this.name.hashCode() + 31;
+    }
+
+
+    @Override
+    public int compareTo(StockItem o) {
+        System.out.println("Entering StockItem.compareTo ");
+        if(this == o) {
+            return 0;
+        }
+        if(o != null) {
+            return this.name.compareTo(o.getName());
+        }
+
+        throw new NullPointerException();
+
+
+    }
+
+    @Override
+    public String toString() {
+        return "StockItem{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", quantityStock=" + quantityStock +
+                '}';
     }
 }
