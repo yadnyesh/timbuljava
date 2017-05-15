@@ -26,5 +26,11 @@ public class Student {
                 return true;
             }
         }
+        return false;
     }
+
+    public int hashCode() {
+        return this.getRegistrationNumber().hashCode();
+    }
+
 }
