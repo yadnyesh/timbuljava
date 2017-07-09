@@ -33,6 +33,6 @@ class FourthTask implements Runnable {
     }
 
     public FourthTask() {
-        this.id = ++count;
+        this.id = ++count;˜
     }
 }
