@@ -5,4 +5,11 @@ package io.yadnyesh;
  */
 public class FifthWay {
 
+    public static void main(String[] args) {
+        System.out.println("Main Thread Starts here..");
+
+
+
+        System.out.println("Main Thread ends here....");
+    }
 }
