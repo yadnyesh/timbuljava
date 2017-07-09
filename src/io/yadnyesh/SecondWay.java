@@ -2,22 +2,19 @@ package io.yadnyesh;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by z063407 on 6/27/17.
- */
-public class FirstWay {
+public class SecondWay {
 
     public static void main(String[] args) {
         System.out.println("Main Thread starts here...");
 
-        new FirstTask();
-        Thread t = new FirstTask();
-
+        new SecondTask().start();
+        Thread t = new SecondTask();
+        t.start();
         System.out.println("Main Thread ended here....");
     }
 }
 
-class FirstTask extends Thread {
+class SecondTask extends Thread {
 
     private static int count = 0;
     private int id;
@@ -34,8 +31,7 @@ class FirstTask extends Thread {
         }
     }
 
-    public FirstTask() {
+    public SecondTask() {
         this.id = ++count;
-        this.start();
     }
 }
