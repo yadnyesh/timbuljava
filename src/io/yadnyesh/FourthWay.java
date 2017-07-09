@@ -7,8 +7,9 @@ public class FourthWay {
     public static void main(String[] args) {
         System.out.println("Main Thread starts here...");
 
-        new FourthTask();
-        new FourthTask();
+        new Thread(new FourthTask()).start();
+        Thread t = new Thread(new FourthTask());
+        t.start();
 
         System.out.println("Main Thread ended here....");
     }
@@ -32,7 +33,6 @@ class FourthTask implements Runnable {
     }
 
     public FourthTask() {
-        this.id = ++count;
-        new Thread(this).start();
+        this.id = ++count;˜
     }
 }
