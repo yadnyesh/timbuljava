@@ -1,21 +1,20 @@
 package io.yadnyesh;
 
-
 import java.util.concurrent.TimeUnit;
 
-public class ThirdWay {
+public class FourthWay {
 
     public static void main(String[] args) {
         System.out.println("Main Thread starts here...");
 
-        new ThirdTask();
-        new ThirdTask();
+        new FourthTask();
+        new FourthTask();
 
         System.out.println("Main Thread ended here....");
     }
 }
 
-class ThirdTask implements Runnable {
+class FourthTask implements Runnable {
 
     private static int count = 0;
     private int id;
@@ -32,7 +31,7 @@ class ThirdTask implements Runnable {
         }
     }
 
-    public ThirdTask() {
+    public FourthTask() {
         this.id = ++count;
         new Thread(this).start();
     }
