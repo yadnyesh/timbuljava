@@ -13,7 +13,7 @@ public class UsingFixedThreadPool {
     public static void main(String[] args) {
         System.out.println("Main thread starts here....");
 
-        ExecutorService executorService = Executors.newFixedThreadPool(3);
+        ExecutorService executorService = Executors.newFixedThreadPool(6);
 
         executorService.execute(new LoopTaskA());
         executorService.execute(new LoopTaskA());
