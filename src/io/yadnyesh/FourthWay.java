@@ -33,6 +33,5 @@ class FourthTask implements Runnable {
 
     public FourthTask() {
         this.id = ++count;
-        new Thread(this).start();
     }
 }
