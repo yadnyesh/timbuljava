@@ -13,7 +13,7 @@ public class FifthWay {
         Thread t = new Thread(new Runnable() {
             @Override
             public void run() {
-                for(int i = 10; i > 0; i--) {
+                for (int i = 10; i > 0; i--) {
                     System.out.println("Tick Tick " + i);
                     try {
                         TimeUnit.MILLISECONDS.sleep(200);
