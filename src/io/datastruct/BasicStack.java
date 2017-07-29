@@ -12,10 +12,14 @@ public class BasicStack<X> {
     }
 
     public void push(X newItem) {
+        data[stackPointer++] = newItem;
 
     }
 
-
+    public X pop () {
+        if (stackPointer == 0) {
+            throw new IllegalStateException("No more items on the Stack!");
+        }
+        return data[stackPointer--];
+    }
 }
-
-
