@@ -22,4 +22,25 @@ public class BasicStack<X> {
         }
         return data[stackPointer--];
     }
+
+    public boolean contains(X item) {
+        boolean found = false;
+        for (int i = 0; i < stackPointer; i++) {
+            if(data[i].equals(item)) {
+                found = true;
+                break;
+            }
+        }
+        return found;
+    }
+
+    public X access (X item) {
+        while(stackPointer > 0) {
+            X tmpItem = pop();
+            if(item.equals(tmpItem)) {
+                return tmpItem;
+            }
+        }
+        throw new IllegalArgumentException("Could not find " + item + " on the stack");
+    }
 }
