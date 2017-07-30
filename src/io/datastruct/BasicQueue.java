@@ -26,5 +26,24 @@ public class BasicQueue<X> {
             return front - end + 1;
         }
     }
+
+    public void enQueue(X item) {
+        if((end + 1) % data.length == front) {
+            throw new IllegalStateException("The Queue is full");
+        }
+        else if(size() == 0) {
+            front++;
+            end++;
+            data[end] = item;
+        }
+        else {
+            end++;
+            data[end] = item;
+        }
+    }
+
+    public X deQueue() {
+
+    }
 }
 
