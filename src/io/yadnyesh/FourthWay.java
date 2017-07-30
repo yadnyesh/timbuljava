@@ -22,7 +22,7 @@ class FourthTask implements Runnable {
 
     @Override
     public void run() {
-        for(int i = 10; i > 0; i--) {
+        for (int i = 10; i > 0; i--) {
             System.out.println("< " + id + " >" + "Tick Tick " + i);
             try {
                 TimeUnit.MILLISECONDS.sleep(200);
@@ -33,6 +33,6 @@ class FourthTask implements Runnable {
     }
 
     public FourthTask() {
-        this.id = ++count;˜
+        this.id = ++count;
     }
 }
