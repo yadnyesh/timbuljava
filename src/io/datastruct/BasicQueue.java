@@ -23,7 +23,7 @@ public class BasicQueue<X> {
             return 0;
         }
         else {
-            return front - end + 1;
+            return end - front + 1;
         }
     }
 
@@ -77,7 +77,13 @@ public class BasicQueue<X> {
     }
 
     public X access(int position) {
-
+        if (size() == 0 || position > size()) {
+            throw new IllegalStateException("No items at position: " + position);
+        }
+        if (position >= front && position <= end) {
+            return data[position];
+        }
+        return null;
     }
 }
 
