@@ -5,7 +5,7 @@ package io.datastruct;
  */
 public class BasicStack<X> {
     private X[] data;
-    int stackPointer;
+    int stackPointer = 0;
 
     public BasicStack() {
         data = (X[]) new Object[1000];
@@ -42,5 +42,9 @@ public class BasicStack<X> {
             }
         }
         throw new IllegalArgumentException("Could not find " + item + " on the stack");
+    }
+
+    public int size() {
+        return stackPointer;
     }
 }
