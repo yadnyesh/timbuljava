@@ -49,14 +49,34 @@ public class BasicQueue<X> {
         }
         else if (front == end) {
             item = data[front];
+            data[front] = null;
             front = -1;
             end = -1;
         }
         else {
             item = data[front];
+            data[front] = null;
             front++;
         }
         return item;
+    }
+
+    public boolean contains(X item) {
+        boolean found = false;
+        if (size() == 0) {
+            return found;
+        }
+
+        for (int i = front; i < end; i++) {
+            if(data[i].equals(item)) {
+                found = true;
+                break;
+            }
+        }
+        return found;
+    }
+
+    public X access(int position) {
 
     }
 }
