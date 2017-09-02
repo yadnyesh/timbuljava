@@ -37,7 +37,37 @@ public class BasicLinkedList<X> {
                 last.setNextNode(newLastNode);
                 last = newLastNode;
             }
+            nodeCount++;
+        }
 
+        public void insert (X item, int position) {
+            if (size() < position) {
+                throw new IllegalStateException ("Position does not exist on the Linked list");
+            }
+
+            Node currentNode = first;
+
+            for (int i = 1; i < position && currentNode != null; i++) {
+                currentNode = currentNode.getNextNode();
+            }
+
+            Node newNode = new Node(item);
+            Node nextNode = currentNode.getNextNode();
+            currentNode.setNextNode(newNode);
+            newNode.setNextNode(nextNode);
+            nodeCount++;
+        }
+
+
+        public X remove(){
+            if (first == null) {
+                throw new IllegalStateException("List empty");
+            }
+
+            X nodeItem = first.getNodeItem();
+            first = first.getNextNode();
+            nodeCount--;
+            return nodeItem;
         }
 
         public Node(Node nextNode, X item) {
