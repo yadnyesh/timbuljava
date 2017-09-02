@@ -89,6 +89,10 @@ public class BasicLinkedList<X> {
             return nodeItem;
         }
 
+        public X get(int position) {
+            return null;
+        }
+
         public Node(Node nextNode, X item) {
             this.nextNode = null;
             this.nodeItem = item;
