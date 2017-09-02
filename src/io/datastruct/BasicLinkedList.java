@@ -58,6 +58,25 @@ public class BasicLinkedList<X> {
             nodeCount++;
         }
 
+        public X removeAt(int position){
+            if (first == null) {
+                throw new IllegalStateException("Node does not exist");
+            }
+
+            Node currentNode = first;
+            Node previosNode = last;
+
+            for (int i = 1; i < position && currentNode != null; i++) {
+                previosNode = currentNode;
+                currentNode = currentNode.getNextNode();
+            }
+
+            X nodeItem = currentNode.getNodeItem();
+            previosNode.setNextNode(currentNode.getNextNode());
+            nodeCount--;
+            return nodeItem;
+        }
+
 
         public X remove(){
             if (first == null) {
