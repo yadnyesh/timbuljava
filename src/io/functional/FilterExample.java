@@ -10,6 +10,7 @@ public class FilterExample {
     public static void main(String[] args) {
         List<String> names = Arrays.asList("Peter", "Sam", "Greg", "Ryan");
 
+
         names.stream().filter(name -> isNotSam(name)).forEach(System.out::println);
     }
 
