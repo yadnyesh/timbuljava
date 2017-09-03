@@ -11,12 +11,15 @@ public class LoopTaskC implements Runnable {
     private String taskId;
 
         public void run() {
-            String currentThreadName = Thread.currentThread().getName();
+            //String currentThreadName = Thread.currentThread().getName();
 
-            System.out.println(" #####  <TASK-" + taskId + "---" + currentThreadName + " > STARTING ########");
+            //System.out.println(" #####  <TASK-" + taskId + "---" + currentThreadName + " > STARTING ########");
+            System.out.println(" #####  <TASK-" + taskId + "---" + Thread.currentThread().getName() + " > STARTING ########");
+
 
             for (int i = 10; i > 0; i--) {
-                System.out.println("< Task " + taskId + "---" + currentThreadName + " >" + "Tick Tick " + i);
+                //System.out.println("< Task " + taskId + "---" + currentThreadName + " >" + "Tick Tick " + i);
+                System.out.println("< Task " + taskId + "---" + Thread.currentThread().getName() + " >" + "Tick Tick " + i);
                 try {
                     TimeUnit.MILLISECONDS.sleep((long)(Math.random() * 1000));
                 } catch (InterruptedException e) {
@@ -24,7 +27,8 @@ public class LoopTaskC implements Runnable {
                 }
             }
 
-            System.out.println(" *****  <TASK-" + taskId + " > ENDING **********");
+            //System.out.println(" *****  <TASK-" + taskId + " > ENDING **********");
+            System.out.println(Thread.currentThread().getName() + "  *****  <TASK-" + taskId + " > ENDING **********");
         }
 
     public LoopTaskC() {
