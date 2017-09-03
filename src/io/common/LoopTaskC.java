@@ -5,13 +5,12 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by z063407 on 7/9/17.
  */
-public class LoopTaskB implements Runnable {
+public class LoopTaskC implements Runnable {
     private static int count = 0;
     private int instanceNumber;
     private String taskId;
 
         public void run() {
-            Thread.currentThread().setName("Amazing Thread .....  " + instanceNumber);
             String currentThreadName = Thread.currentThread().getName();
 
             System.out.println(" #####  <TASK-" + taskId + "---" + currentThreadName + " > STARTING ########");
@@ -28,7 +27,7 @@ public class LoopTaskB implements Runnable {
             System.out.println(" *****  <TASK-" + taskId + " > ENDING **********");
         }
 
-    public LoopTaskB() {
+    public LoopTaskC() {
         this.instanceNumber = ++count;
         this.taskId = "LoopTaskB" + instanceNumber;
         }
