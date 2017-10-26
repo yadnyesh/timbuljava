@@ -1,5 +1,7 @@
 package io.threads;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Created by z063407 on 10/27/17.
  */
@@ -11,7 +13,8 @@ public class MyFirstThread {
         thread.start();
 
         try {
-            Thread.sleep(3000);
+            //Thread.sleep(3000);
+            TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
