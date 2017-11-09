@@ -9,7 +9,7 @@ public class Main {
         int y= 0;
         System.out.println(divideLBYL(x, y));
         System.out.println(divideEAFP(x, y));
-        System.out.println(getInt());
+        System.out.println(getIntEAFP());
     }
 
     private static int getInt() {
