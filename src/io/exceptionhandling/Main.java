@@ -1,5 +1,7 @@
 package io.exceptionhandling;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         int x = 98;
@@ -7,6 +9,12 @@ public class Main {
         System.out.println(divideLBYL(x, y));
         System.out.println(divideEAFP(x, y));
     }
+
+    private static int getInt() {
+        Scanner s = new Scanner(System.in);
+        return s.nextInt();
+    }
+
 
     private static int divideLBYL (int x, int y){
         if(y != 0){
@@ -22,5 +30,9 @@ public class Main {
         } catch (ArithmeticException e){
             return 0;
         }
+    }
+
+    private static int divide (int x, int y) {
+        return x /y;
     }
 }
