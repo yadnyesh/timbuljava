@@ -19,16 +19,15 @@ public class Example {
         try {
             x = getInt();
             y = getInt();
-        } catch(NoSuchElementException e){
-            throw new ArithmeticException("No Suitable input");
-        }
-        System.out.println("x is: " + x + ", y is: " + y);
-        try {
+            System.out.println("x is: " + x + ", y is: " + y);
             return x/y;
-        } catch (ArithmeticException e){
+
+        }catch (ArithmeticException e){
             throw new ArithmeticException("Attempt to divide by zero");
         }
-
+         catch(NoSuchElementException e){
+            throw new ArithmeticException("No Suitable input");
+        }
     }
 
     private static int getInt() {
