@@ -15,4 +15,21 @@ public class Queue<T> {
     public Queue(Class<T> clazz) {
         elements = (T[]) Array.newInstance(clazz, MAX_SIZE);
     }
+
+    public static class QueueOverflowException extends Exception {
+
+    }
+
+    public static class QueueUnderflowException extends Exception {
+
+    }
+
+    public boolean isEmpty() {
+        return headIndex == SPECIAL_EMPTY_VALUE;
+    }
+
+    public boolean isFull(){
+        int nextIndex = (tailIndex + 1) % elements.length;
+        return nextIndex == headIndex;
+    }
 }
