@@ -12,7 +12,9 @@ public class Queue<T> {
     private int headIndex = SPECIAL_EMPTY_VALUE;
     private int tailIndex = SPECIAL_EMPTY_VALUE;
 
-    public Queue(Class<T> clazz) {
+    public Queue(Class<T> clazz) {this (clazz, MAX_SIZE);}
+
+    public Queue(Class<T> clazz, int size) {
         elements = (T[]) Array.newInstance(clazz, MAX_SIZE);
     }
 
@@ -59,5 +61,70 @@ public class Queue<T> {
         }
 
         return data;
+    }
+
+    public boolean offer(T data) {
+        if(isFull()) {
+            return false;
+        }
+        try {
+            enqueue(data);
+        } catch(QueueOverflowException que) {
+            System.out.println(que);
+        }
+        return true;
+    }
+
+    public T peek() throws QueueUnderflowException {
+        if(isEmpty()) {
+            throw new QueueUnderflowException();
+        }
+        return elements[headIndex];
+    }
+
+    public static void main(String[] args) throws QueueOverflowException, QueueUnderflowException{
+        MAX_SIZE = 4;
+        Queue<Integer> queue = new Queue<>(Integer.class);
+        System.out.println("1.Queue full?: " + queue.isFull());
+        System.out.println("1.Queue empty?: " + queue.isEmpty());
+
+        try {
+            queue.enqueue(1);
+            queue.enqueue(2);
+            queue.enqueue(3);
+        } catch (QueueOverflowException queueOverflowException) {
+            System.out.println("Queue Full..cannot accept more items");
+        }
+
+        System.out.println("2.Queue full?: " + queue.isFull());
+        System.out.println("2.Queue empty?: " + queue.isEmpty());
+
+        queue.enqueue(4);
+
+        System.out.println("3.Queue full?: " + queue.isFull());
+        System.out.println("3.Queue empty?: " + queue.isEmpty());
+
+        System.out.println("1. Queue Peek: " + queue.peek());
+
+        int deQueuedElememt = queue.dequeue();
+        System.out.println("Dequeued Element: " + deQueuedElememt);
+
+        System.out.println("2. Queue Peek: " + queue.peek());
+
+        try {
+            queue.enqueue(4);
+            queue.enqueue(5);
+            queue.enqueue(6);
+        } catch (QueueOverflowException queueOverflowException){
+            System.out.println(queueOverflowException);
+        }
+
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+
+
     }
 }
