@@ -53,7 +53,7 @@ public class Queue<T> {
         T data = elements[headIndex];
 
         if(headIndex == tailIndex) {
-            headIndex = tailIndex;
+            headIndex = SPECIAL_EMPTY_VALUE;
         } else {
             headIndex = (headIndex + 1) % elements.length;
         }
