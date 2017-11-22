@@ -44,4 +44,20 @@ public class Queue<T> {
             headIndex = tailIndex;
         }
     }
+
+    public T dequeue() throws QueueUnderflowException {
+        if(isEmpty()){
+            throw new QueueUnderflowException();
+        }
+
+        T data = elements[headIndex];
+
+        if(headIndex == tailIndex) {
+            headIndex = tailIndex;
+        } else {
+            headIndex = (headIndex + 1) % elements.length;
+        }
+
+        return data;
+    }
 }
