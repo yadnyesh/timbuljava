@@ -32,4 +32,16 @@ public class Queue<T> {
         int nextIndex = (tailIndex + 1) % elements.length;
         return nextIndex == headIndex;
     }
+
+    public void enqueue(T data) throws QueueOverflowException {
+        if (isFull()) {
+            throw new QueueOverflowException();
+        }
+        tailIndex = (tailIndex + 1) % elements.length;
+        elements[tailIndex] = data;
+
+        if (headIndex == SPECIAL_EMPTY_VALUE) {
+            headIndex = tailIndex;
+        }
+    }
 }
