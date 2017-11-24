@@ -15,7 +15,7 @@ public class ArrayDisp {
 
     public static void main(String[] args) {
         String[] names = new String [10];
-        names[0] = "Yadnyesh";
+        names[0] = "Yadnyesh...HOHO ";
         names[1] = "Bindiya";
         names[2] = "Varada";
         names[3] = "Bharat";
