@@ -1,6 +1,5 @@
 package io.datastruct;
 
-
 import java.lang.reflect.Array;
 
 public class Queue<T> {
