@@ -21,6 +21,13 @@ public class Sample {
 		System.out.println(result);
 		System.out.println(numbers.stream().filter(e -> e % 2 == 0).mapToInt(e -> e * 2).sum());
 		
+		System.out.println(
+				numbers.stream()
+					.filter( e -> e % 2 == 0)
+					.mapToDouble(Math::sqrt)
+					.sum()
+		);
+		
 		//        Thread th;
 		//        th = new Thread(new Runnable() {
 		//            @Override
