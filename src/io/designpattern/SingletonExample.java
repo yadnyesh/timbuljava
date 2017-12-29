@@ -11,5 +11,11 @@ public class SingletonExample {
 		System.out.println(instance1);
 		Singleton instance2 = Singleton.getInstance();
 		System.out.println(instance2);
+		
+		/**
+		 * 1. Runtime.getRuntime()
+		 * 2. Spring
+		 * 3. Logger
+		 */
 	}
 }

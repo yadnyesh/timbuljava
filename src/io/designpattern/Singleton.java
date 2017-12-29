@@ -34,4 +34,10 @@ public class Singleton {
  - Private Constructor
  - Private Instance of class
  - No parameters to the constructor
+ 
+ #### Disadvantages
+ - Overuse, hindrance when writing Unit Testing
+ - Slow down your app - use threads carefully
+ - Don't use it as factory
+ 
 ***/
