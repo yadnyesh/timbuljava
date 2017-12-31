@@ -1,4 +1,4 @@
-package io.designpattern;
+package io.designpattern.singleton;
 
 /**
  * Created by z063407 on 12/27/17.
