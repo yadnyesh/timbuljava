@@ -9,12 +9,6 @@ import java.util.List;
 public class Sample {
 	
 	public static int transform(int number) {
-		if (number == 7 )
-			try {
-				throw new Exception("oops something went wrong");
-			} catch(Exception e) {
-				e.printStackTrace();
-			}
 		return number;
 	}
 	
