@@ -15,14 +15,20 @@ import java.net.URL;
 public class YahooFinance {
 	public static BigDecimal getPrice(final String ticker) {
 		try {
-			final URL url =
-					new URL("http://ichart.finance.yahoo.com/table.csv?s=" + ticker);
+//			final URL url =
+//					new URL("http://ichart.finance.yahoo.com/table.csv?s=" + ticker);
+//
+//			final BufferedReader reader =
+//					new BufferedReader(new InputStreamReader(url.openStream()));
+//			final String data = reader.lines().skip(1).findFirst().get();
+//			final String[] dataItems = data.split(",");
+//			return new BigDecimal(dataItems[dataItems.length - 1]);
 			
-			final BufferedReader reader =
-					new BufferedReader(new InputStreamReader(url.openStream()));
-			final String data = reader.lines().skip(1).findFirst().get();
-			final String[] dataItems = data.split(",");
-			return new BigDecimal(dataItems[dataItems.length - 1]);
+			BigDecimal max = new BigDecimal(5 + ".0");
+			BigDecimal randFromDouble = new BigDecimal(Math.random());
+			BigDecimal actualRandomDec = randFromDouble.divide(max,BigDecimal.ROUND_DOWN);
+			return actualRandomDec;
+			
 		} catch (Exception ex) {
 			throw new RuntimeException(ex);
 		}
