@@ -7,8 +7,9 @@ package io.threads;
 
 public class App {
 
-//    public static void main(String[] args){
-//        System.out.println(new Random().nextInt(100));
-//    }
+    public static void main(String[] args){
+        //System.out.println(new Random().nextInt(100));
+		System.out.println("Sample Print");
+	}
 
 }
