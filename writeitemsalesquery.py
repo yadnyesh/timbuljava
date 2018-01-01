@@ -59,3 +59,5 @@ def write_item_sales_query(json_file, workspace):
 
 if __name__ == '__main__':
     write_item_sales_query(sys.argv[1], sys.argv[2])
+    
+    ### Example code for python
