@@ -6,6 +6,13 @@ import java.util.stream.Stream;
 /**
  * Created by z063407 on 1/1/18.
  * Last Responsive moment
+ * Reactive - Eric Mayer
+ *  --> Observable++
+ *  --> Dataflow
+ *  --> push instead of pull iteration
+ *  --> signal end
+ *  --> respectfully deal with errors
+ *  --> synchronous, asynchronous, or lazy
  */
 public class One {
 	
