@@ -24,7 +24,7 @@ public class YahooFinance {
 //			final String[] dataItems = data.split(",");
 //			return new BigDecimal(dataItems[dataItems.length - 1]);
 			
-			BigDecimal max = new BigDecimal(5 + ".0");
+			BigDecimal max = new BigDecimal(50 + ".0");
 			BigDecimal randFromDouble = new BigDecimal(Math.random());
 			BigDecimal actualRandomDec = randFromDouble.divide(max,BigDecimal.ROUND_DOWN);
 			return actualRandomDec;

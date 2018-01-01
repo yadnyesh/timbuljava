@@ -16,7 +16,7 @@ public class StockServer {
 				symbols.stream()
 						.map(StockInfo::fetch)
 						.forEach(subscriber::onNext);
-				sleep(1000);
+				sleep(10000);
 			}
 		});
 	}
