@@ -9,10 +9,7 @@ public class FPStrings {
 	
 	public static void main(String[] args) {
 		final List<String> friends =
-				Arrays.asList("Brian", "Nate", "Neal", "Raju", "Sara", "Scott");
-		
-		for(String name: friends) {
-			System.out.println(name);
-		}
+			Arrays.asList("Brian", "Nate", "Neal", "Raju", "Sara", "Scott");
+			friends.stream().forEach(System.out::println);
 	}
 }
