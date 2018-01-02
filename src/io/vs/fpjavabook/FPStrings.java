@@ -11,8 +11,8 @@ public class FPStrings {
 		final List<String> friends =
 				Arrays.asList("Brian", "Nate", "Neal", "Raju", "Sara", "Scott");
 		
-		for(int i = 0; i < friends.size(); i++) {
-			System.out.println(friends.get(i));
+		for(String name: friends) {
+			System.out.println(name);
 		}
 	}
 }
