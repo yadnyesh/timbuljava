@@ -7,6 +7,7 @@ public class Main {
         CustomerList anotherCustomer = customer;
         anotherCustomer.setBalance(12.18);
         System.out.println("Balance for Customer and the balance " + customer.getName() + " is " + customer.getBalance());
+        System.out.println("Another sysout change");
 
     }
 }
