@@ -6,13 +6,20 @@ package io.exceptionhandling;
 public class First {
 
     public static void main(String[] args) {
-        System.out.println(new Exception());
         try {
-            throw new Exception();
-        } catch (Exception e) {
-            System.out.print("Caught!");
-        } finally {
-            System.out.print("Finally!");
+            System.out.println(10/0);
+            throw new ArithmeticException("divide by zero");
+        } catch(ArithmeticException e){
+            System.out.println(e.getMessage());
         }
+
+//        System.out.println(new Exception());
+//        try {
+//            throw new Exception();
+//        } catch (Exception e) {
+//            System.out.print("Caught!");
+//        } finally {
+//            System.out.print("Finally!");
+//        }
     }
 }
