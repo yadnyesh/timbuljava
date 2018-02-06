@@ -3,7 +3,7 @@ package io.exceptionhandling;
 /**
  * Created by z063407 on 10/19/17.
  */
-public class First {
+public class First extends RuntimeException{
 
     public static void main(String[] args) {
         try {
