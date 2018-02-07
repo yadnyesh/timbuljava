@@ -6,12 +6,12 @@ package io.exceptionhandling;
 public class First extends RuntimeException{
 
     public static void main(String[] args) {
-        try {
-            System.out.println(10/0);
-            throw new ArithmeticException("divide by zero");
-        } catch(ArithmeticException e){
-            System.out.println(e.getMessage());
-        }
+//        try {
+//            System.out.println(10/0);
+//            throw new ArithmeticException("divide by zero");
+//        } catch(ArithmeticException e){
+//            System.out.println(e.getMessage());
+//        }
 
 //        System.out.println(new Exception());
 //        try {
@@ -21,5 +21,12 @@ public class First extends RuntimeException{
 //        } finally {
 //            System.out.print("Finally!");
 //        }
+        
+        try {
+            System.out.println("Hello");
+        } catch(java.io.IOException e){
+            System.out.println(e);
+        }
+        
     }
 }
