@@ -24,7 +24,7 @@ public class First extends RuntimeException{
         
         try {
             System.out.println("Hello");
-        } catch(ArithmeticException e){
+        } catch(Exception e){
             System.out.println(e);
         }
         
