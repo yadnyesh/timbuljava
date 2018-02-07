@@ -24,7 +24,7 @@ public class First extends RuntimeException{
         
         try {
             System.out.println("Hello");
-        } catch(java.io.IOException e){
+        } catch(java.io.InterruptedIOException e){
             System.out.println(e);
         }
         
