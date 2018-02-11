@@ -9,4 +9,7 @@ public class ThreadDemo {
 			System.out.println("Main Thread");
 		}
 	}
+	
+	//t.start --> New thread is created
+	//t.run --> Same thread like calling a method --- only calling thread does the operation
 }
