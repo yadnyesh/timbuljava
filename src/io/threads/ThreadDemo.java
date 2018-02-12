@@ -21,6 +21,9 @@ public class ThreadDemo {
 		Thread t1 = new Thread(t);
 		t1.start();
 		System.out.println(Thread.currentThread());
+		System.out.println(t1.currentThread());
+		Thread.currentThread().setName("My Given Name");
+		System.out.println(Thread.currentThread());
 		
 	}
 	
