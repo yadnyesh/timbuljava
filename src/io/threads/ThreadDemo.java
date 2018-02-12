@@ -20,6 +20,7 @@ public class ThreadDemo {
 		MyThread t = new MyThread();
 		Thread t1 = new Thread(t);
 		t1.start();
+		System.out.println(Thread.currentThread());
 		
 	}
 	
