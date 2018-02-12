@@ -10,12 +10,16 @@ public class ThreadDemo {
 //		}
 		
 		
-		MyRunnable r = new MyRunnable();
-		Thread t = new Thread(r); //r is called target runnable
-		t.start();
-		for (int i = 0; i < 10; i++) {
-			System.out.println("Main Thread");
-		}
+//		MyRunnable r = new MyRunnable();
+//		Thread t = new Thread(r); //r is called target runnable
+//		t.start();
+//		for (int i = 0; i < 10; i++) {
+//			System.out.println("Main Thread");
+//		}
+	
+		MyThread t = new MyThread();
+		Thread t1 = new Thread(t);
+		t1.start();
 		
 	}
 	
