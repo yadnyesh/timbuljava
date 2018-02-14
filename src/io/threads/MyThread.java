@@ -6,7 +6,6 @@ public class MyThread extends Thread{
 		for (int i=0; i < 10; i++) {
 			System.out.println("Child Thread");
 			Thread.yield();
-			//System.out.println(Thread.currentThread());
 		}
 	}
 }
