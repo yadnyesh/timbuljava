@@ -6,7 +6,7 @@ public class ThreadJoinDemo {
 		MyThreadJoInt t = new MyThreadJoInt();
 		t.start();
 
-		t.join();
+		t.join(10000);
 		
 		for (int i=0; i < 10; i++) {
 			System.out.println("Main Thread");
