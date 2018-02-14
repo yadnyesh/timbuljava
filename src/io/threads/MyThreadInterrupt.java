@@ -3,7 +3,7 @@ package io.threads;
 public class MyThreadInterrupt extends Thread{
 	
 	public void run() {
-		for (int i=0; i <= 10; i++){
+		for (int i=0; i <= 10; i++)
 			System.out.println("Child Thread");
 			try {
 				Thread.sleep(2000);
@@ -11,6 +11,5 @@ public class MyThreadInterrupt extends Thread{
 				e.printStackTrace();
 				System.out.println("Got Interrupted");
 			}
-		}
 	}
 }
