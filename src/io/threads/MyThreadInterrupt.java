@@ -3,13 +3,14 @@ package io.threads;
 public class MyThreadInterrupt extends Thread{
 	
 	public void run() {
-		for (int i=0; i <= 10; i++)
-			System.out.println("Child Thread");
-			try {
+		try {
+			for(int i = 0; i <= 10; i++) {
+				System.out.println("Child Thread");
 				Thread.sleep(2000);
-			} catch(InterruptedException e) {
-				e.printStackTrace();
-				System.out.println("Got Interrupted");
 			}
+		} catch(InterruptedException e){
+			e.printStackTrace();
+		}
+		
 	}
 }
