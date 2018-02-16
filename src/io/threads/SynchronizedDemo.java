@@ -11,7 +11,7 @@ public class SynchronizedDemo {
 		MyThread t2 = new MyThread(d, "Yogi");
 		t1.start();
 		t2.start();
-		System.out.println(LocalDate.now());
+		System.out.println(LocalDate.now().getMonth());
 		System.out.println(LocalTime.now());
 	}
 }
