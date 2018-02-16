@@ -2,7 +2,7 @@ package io.threads;
 
 public class DisplayMessage {
 	
-	public void wish(String name) {
+	public synchronized void wish(String name) {
 		for (int i = 0 ; i < 10; i++){
 			System.out.println("Hello: " + name);
 			try{
