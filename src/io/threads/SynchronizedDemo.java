@@ -1,5 +1,7 @@
 package io.threads;
 
+import java.time.LocalDate;
+
 public class SynchronizedDemo {
 	
 	public static void main(String[] args) {
@@ -8,5 +10,6 @@ public class SynchronizedDemo {
 		MyThread t2 = new MyThread(d, "Yogi");
 		t1.start();
 		t2.start();
+		System.out.println(LocalDate.now());
 	}
 }
