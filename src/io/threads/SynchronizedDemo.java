@@ -1,6 +1,7 @@
 package io.threads;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class SynchronizedDemo {
 	
@@ -11,5 +12,6 @@ public class SynchronizedDemo {
 		t1.start();
 		t2.start();
 		System.out.println(LocalDate.now());
+		System.out.println(LocalTime.now());
 	}
 }
