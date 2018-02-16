@@ -8,5 +8,7 @@ public class ThreadDisplay extends Thread{
 		this.d = d;
 	}
 
-	
+	public void run() {
+		d.displayn();
+	}
 }
