@@ -2,7 +2,7 @@ package io.threads;
 
 public class Display {
 
-	public void displayn(){
+	public synchronized void displayn(){
 		for (int i = 0; i <=10; i++) {
 			System.out.println(i);
 			try {
@@ -13,7 +13,7 @@ public class Display {
 		}
 	}
 	
-	public void displayc(){
+	public synchronized void displayc(){
 		for(int i = 65; i <= 75; i++ ){
 			System.out.println((char)i);
 			try {
