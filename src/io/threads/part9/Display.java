@@ -3,7 +3,7 @@ package io.threads.part9;
 public class Display {
 
 	public void wish(String name){
-		synchronized(this) {
+		synchronized(Display.class) {
 			for (int i =0; i <=10 ; i++){
 				System.out.println("Hey...");
 				try {
