@@ -6,5 +6,7 @@ public class SynchronizedDemo {
 		Display d = new Display();
 		MyThread td = new MyThread(d, "dhoni");
 		MyThread tv = new MyThread(d, "Kohli");
+		td.start();
+		tv.start();
 	}
 }
