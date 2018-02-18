@@ -8,8 +8,7 @@ public class ThreadDemo {
 		synchronized(b){
 			System.out.println("Main Thread calling wait method.....");
 			b.wait();
+			System.out.println(b.total);
 		}
-		
-		System.out.println(b.total);
 	}
 }
