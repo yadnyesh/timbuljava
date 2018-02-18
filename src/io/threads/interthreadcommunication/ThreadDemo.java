@@ -7,7 +7,7 @@ public class ThreadDemo {
 		b.start();
 		synchronized(b){
 			System.out.println("Main Thread calling wait method.....");
-			b.wait(); //Wait till ThreadA is completed
+			b.wait();
 		}
 		
 		System.out.println(b.total);
