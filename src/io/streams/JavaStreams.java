@@ -8,7 +8,7 @@ public class JavaStreams {
 		IntStream
 				.range(1,10)
 				.skip(5)
-				.forEach(System.out::println);
+				.forEach(x -> System.out.println(x));
 		System.out.println();
 	}
 }
