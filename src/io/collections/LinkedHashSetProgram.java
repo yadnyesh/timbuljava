@@ -15,3 +15,6 @@ public class LinkedHashSetProgram {
 		System.out.println(h);
 	}
 }
+
+//Insertion Order Preserved
+//Cacheable programs since order is important
