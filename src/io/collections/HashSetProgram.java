@@ -10,7 +10,7 @@ public class HashSetProgram {
 		h.add("C");
 		h.add("D");
 		h.add("E");
-		h.add("F");
+		h.add("10");
 		h.add("G");
 		System.out.println(h.add("G"));
 		System.out.println(h);
