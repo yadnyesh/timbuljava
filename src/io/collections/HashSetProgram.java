@@ -12,7 +12,8 @@ public class HashSetProgram {
 		h.add("E");
 		h.add("F");
 		h.add("G");
-		
+		System.out.println(h.add("G"));
+		System.out.println(h);
 	}
 	
 	
