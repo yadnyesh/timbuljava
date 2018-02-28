@@ -13,6 +13,7 @@ public class DynamicInvocationHandler implements InvocationHandler {
 	
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-		return null;
+		LOGGER.info("Invoked Method: {}", method.getName());
+		return 42;
 	}
 }
