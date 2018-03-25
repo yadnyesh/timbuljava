@@ -19,16 +19,16 @@ public class Student {
         this.registrationNumber = registrationNumber;
     }
 
-    public boolean equals(Object o) {
-        System.out.println("From Map");
-        if(o != null && o instanceof Student) {
-            String regNumber = ((Student) o).getRegistrationNumber();
-            if(regNumber != null && regNumber.equals(this.getRegistrationNumber())){
-                return true;
-            }
-        }
-        return false;
-    }
+//    public boolean equals(Object o) {
+//        System.out.println("From Map");
+//        if(o != null && o instanceof Student) {
+//            String regNumber = ((Student) o).getRegistrationNumber();
+//            if(regNumber != null && regNumber.equals(this.getRegistrationNumber())){
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
 
     public int hashCode() {
         System.out.println("in HashCode From Map");
