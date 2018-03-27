@@ -30,7 +30,13 @@ public class PriorityQueueExample {
 		}
 		
 		public int compareTo(Book book){
-			if (this.id > book.id);
+			if (this.id > book.id){
+				return 1;
+			} else if (this.id < book.id) {
+				return -1;
+			}
+			else
+				return 0;
 		}
 	}
 	
