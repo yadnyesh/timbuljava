@@ -1,6 +1,6 @@
 package io.collections.durga;
 
-public class Book {
+public class Book implements Comparable<Book>{
 		private int id;
 		private String name;
 		private String author;
@@ -24,6 +24,7 @@ public class Book {
 			return "Book{" + "id=" + id + ", name='" + name + '\'' + ", author='" + author + '\'' + ", publisher='" + publisher + '\'' + ", quantity=" + quantity + '}';
 		}
 		
+		@Override
 		public int compareTo(Book book){
 			if (this.id > book.id){
 				return 1;
