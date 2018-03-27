@@ -5,51 +5,19 @@ import java.util.Queue;
 
 public class PriorityQueueExample {
 	
-	class Book {
-		private int id;
-		private String name;
-		private String author;
-		private String publisher;
-		int quantity;
-		
-		public Book(){
-		
-		}
-		
-		public Book(int id, String name, String author, String publisher, int quantity) {
-			this.id = id;
-			this.name = name;
-			this.author = author;
-			this.publisher = publisher;
-			this.quantity = quantity;
-		}
-		
-		@Override
-		public String toString() {
-			return "Book{" + "id=" + id + ", name='" + name + '\'' + ", author='" + author + '\'' + ", publisher='" + publisher + '\'' + ", quantity=" + quantity + '}';
-		}
-		
-		public int compareTo(Book book){
-			if (this.id > book.id){
-				return 1;
-			} else if (this.id < book.id) {
-				return -1;
-			}
-			else
-				return 0;
-		}
-	}
-	
-	
 	public static void main(String[] args) {
-		Queue<String> pqueue = new PriorityQueue<String>();
-		pqueue.add("India");
-		pqueue.add("Pakistan");
-		pqueue.add("Bangladesh");
-		pqueue.add("Srilanka");
-		pqueue.add("West Indies");
-		pqueue.add("England");
-		pqueue.stream().forEach(System.out::println);
+//		Queue<String> pqueue = new PriorityQueue<String>();
+//		pqueue.add("India");
+//		pqueue.add("Pakistan");
+//		pqueue.add("Bangladesh");
+//		pqueue.add("Srilanka");
+//		pqueue.add("West Indies");
+//		pqueue.add("England");
+//		pqueue.stream().forEach(System.out::println);
+		Queue<Book> pqueue = new PriorityQueue<Book>();
+		Book b1=new Book(121,"Let us C","Yashwant Kanetkar","BPB",8);
+		Book b2=new Book(233,"Operating System","Galvin","Wiley",6);
+		Book b3=new Book(101,"Data Communications & Networking","Forouzan","Mc Graw Hill",4);
 	}
 	
 	
