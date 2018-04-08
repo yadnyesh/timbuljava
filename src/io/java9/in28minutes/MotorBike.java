@@ -15,4 +15,9 @@ public class MotorBike {
 	public void setSpeed(int speed){
 		this.speed = speed;
 	}
+	
+	public void increaseSpeed(int speedIncrease) {
+		this.speed = this.speed + speedIncrease;
+	}
+	
 }
