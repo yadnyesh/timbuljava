@@ -13,8 +13,8 @@ public class SerializeDemo {
 		e.number = 101;
 		try {
 			FileOutputStream fileOutputStream = new FileOutputStream("employee.ser");
-		} catch (IOException e){
-			System.out.println(e);
+		} catch (IOException e1){
+			System.out.println(e1);
 		}
 	}
 }
