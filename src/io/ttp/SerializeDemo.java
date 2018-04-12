@@ -15,6 +15,7 @@ public class SerializeDemo {
 			FileOutputStream fileOutputStream = new FileOutputStream("employee.ser");
 		} catch (IOException e1){
 			System.out.println(e1);
+			e1.printStackTrace();
 		}
 	}
 }
