@@ -12,6 +12,7 @@ public class FilterExample {
 
 
         names.stream().filter(name -> isNotSam(name)).forEach(System.out::println);
+        
     }
 
     private static boolean isNotSam(String name) {
