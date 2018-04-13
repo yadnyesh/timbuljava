@@ -12,9 +12,8 @@ public class Student {
 		this.marks = marks;
 	}
 	
-	public static int getNumberOfMarks() {
-//		return marks.length;
-		return null;
+	public int getNumberOfMarks() {
+		return marks.length;
 	}
 	
 	public int getTotalSumOfMarks() {

@@ -7,7 +7,7 @@ public class StudentRunner {
 		
 		Student student = new Student("Yadnyesh", marks);
 		
-		int number = Student.getNumberOfMarks();
+		int number = student.getNumberOfMarks();
 		System.out.println(number);
 		
 		int sum = student.getTotalSumOfMarks();
