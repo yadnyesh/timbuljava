@@ -6,5 +6,11 @@ public class StudentRunner {
 		int[] marks = {98, 99, 100};
 		
 		Student student = new Student("Yadnyesh", marks);
+		
+		int number = Student.getNumberOfMarks();
+		System.out.println(number);
+		
+		int sum = student.getTotalSumOfMarks();
+		System.out.println("Sum of Marks: " + sum);
 	}
 }
