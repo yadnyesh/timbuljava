@@ -17,5 +17,7 @@ public class StudentsCollectionRunner {
 		System.out.println("Asc --> " + studentsAl);
 		Collections.sort(studentsAl, new DescStudentComparator());
 		System.out.println("DescStudentComparator: " + studentsAl);
+		studentsAl.sort(new AscStudentComparator());
+		System.out.println(studentsAl);
 	}
 }

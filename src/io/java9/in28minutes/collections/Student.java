@@ -10,6 +10,14 @@ class DescStudentComparator implements Comparator<Student>{
 	}
 }
 
+class AscStudentComparator implements Comparator<Student>{
+	
+	@Override
+	public int compare(Student student1, Student student2) {
+		return Integer.compare(student1.getId(), student2.getId());
+	}
+}
+
 
 public class Student implements Comparable<Student>{
 	private int id;
