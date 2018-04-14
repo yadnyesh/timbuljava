@@ -5,8 +5,8 @@ import java.util.Comparator;
 class DescStudentComparator implements Comparator<Student>{
 	
 	@Override
-	public int compare(Student o1, Student o2) {
-		return 0;
+	public int compare(Student student1, Student student2) {
+		return Integer.compare(student2.getId(), student1.getId());
 	}
 }
 
@@ -46,7 +46,7 @@ public class Student implements Comparable<Student>{
 	
 	@Override
 	public String toString() {
-		return "Student{" + "id=" + id + ", name='" + name + '\'' + '}';
+		return "Student{" + "id=" + id + ", name='" + name + '\'' + '}' + '\n';
 	}
 	
 }

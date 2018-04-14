@@ -1,9 +1,7 @@
 package io.java9.in28minutes.collections;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.sql.SQLOutput;
+import java.util.*;
 
 public class StudentsCollectionRunner {
 	
@@ -16,6 +14,8 @@ public class StudentsCollectionRunner {
 		System.out.println(studentList);
 		List<Student> studentsAl = new ArrayList<>(studentList);
 		Collections.sort(studentsAl);
-		System.out.println(studentsAl);
+		System.out.println("Asc --> " + studentsAl);
+		Collections.sort(studentsAl, new DescStudentComparator());
+		System.out.println("DescStudentComparator: " + studentsAl);
 	}
 }
