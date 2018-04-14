@@ -9,4 +9,10 @@ public class ListDemo {
 		List newList = List.of("1", "2", "3", "4", "5");
 		System.out.println(newList);
 	}
+	
+	public class ListDemoImpl {
+		public void printAll(){
+		
+		}
+	}
 }
