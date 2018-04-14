@@ -1,6 +1,6 @@
 package io.java9.in28minutes.collections;
 
-public class Student {
+public class Student implements Comparable<Student>{
 	private int id;
 	private String name;
 	
@@ -10,6 +10,11 @@ public class Student {
 	public Student(int id, String name) {
 		this.id = id;
 		this.name = name;
+	}
+	
+	@Override
+	public int compareTo(Student student) {
+		return Integer.compare(this.id, student.id);
 	}
 	
 	public int getId() {
@@ -32,4 +37,5 @@ public class Student {
 	public String toString() {
 		return "Student{" + "id=" + id + ", name='" + name + '\'' + '}';
 	}
+	
 }
