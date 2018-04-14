@@ -11,6 +11,6 @@ public class StudentRunner {
 		System.out.println(number);
 		
 		int sum = student.getTotalSumOfMarks();
-		System.out.println("Sum of Marks: " + sum);
+		System.out.println("Sum of Marks: " + sum );
 	}
 }
