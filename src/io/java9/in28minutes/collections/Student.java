@@ -1,5 +1,16 @@
 package io.java9.in28minutes.collections;
 
+import java.util.Comparator;
+
+class DescStudentComparator implements Comparator<Student>{
+	
+	@Override
+	public int compare(Student o1, Student o2) {
+		return 0;
+	}
+}
+
+
 public class Student implements Comparable<Student>{
 	private int id;
 	private String name;
