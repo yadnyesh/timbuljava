@@ -10,5 +10,6 @@ public class FunctionalProgrammingRunner {
 	
 	public static void main(String[] args) {
 		List<String> list = List.of("Appple", "Orange", "Banana", "Cat", "Dog");
+		printWithFP(list);
 	}
 }
