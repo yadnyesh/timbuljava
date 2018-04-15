@@ -3,6 +3,7 @@ package io.java9.in28minutes.functionalprogramming;
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class FunctionalProgrammingRunner {
 	
@@ -35,5 +36,6 @@ public class FunctionalProgrammingRunner {
 						  );
 		System.out.println(numbers.stream().max((n1,n2) -> Integer.compare(n1,n2)).get());
 		System.out.println(numbers.stream().filter(e -> e%2 == 0).collect(Collectors.toList()));
+		System.out.println(IntStream.range(1,11).map(e -> e*e).boxed().collect(Collectors.toList()));
 	}
 }
