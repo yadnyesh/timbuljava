@@ -14,6 +14,10 @@ public class MyCustomList<T> {
 		list.remove(element);
 	}
 	
+	public T get(int index){
+		return list.get(index);
+	}
+	
 	@Override
 	public String toString() {
 		return "MyCustomList{" + "list=" + list + '}';
