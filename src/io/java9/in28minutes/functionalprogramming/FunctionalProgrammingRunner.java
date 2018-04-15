@@ -31,5 +31,6 @@ public class FunctionalProgrammingRunner {
 										}
 									)
 						  );
+		System.out.println(numbers.stream().max((n1,n2) -> Integer.compare(n1,n2)).get());
 	}
 }
