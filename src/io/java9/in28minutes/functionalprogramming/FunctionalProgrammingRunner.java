@@ -34,6 +34,6 @@ public class FunctionalProgrammingRunner {
 									)
 						  );
 		System.out.println(numbers.stream().max((n1,n2) -> Integer.compare(n1,n2)).get());
-		System.out.println(numbers.stream().filter(e -> e%2 ==0).collect(Collectors.toList()));
+		System.out.println(numbers.stream().filter(e -> e%2 == 0).collect(Collectors.toList()));
 	}
 }
