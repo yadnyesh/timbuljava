@@ -9,7 +9,9 @@ public class FunctionalProgrammingRunner {
 	}
 	
 	private static void printWithFPFiltering(List<String> list){
-		list.stream().forEach(element -> System.out.println("element -> " + element));
+		list.stream()
+				.filter(element -> element.endsWith("at"))
+				.forEach(element -> System.out.println("element -> " + element));
 	}
 	
 	public static void main(String[] args) {
