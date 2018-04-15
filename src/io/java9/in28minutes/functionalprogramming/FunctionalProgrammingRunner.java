@@ -20,5 +20,6 @@ public class FunctionalProgrammingRunner {
 		
 		List<Integer> numbers = List.of(1,2,3,4,5,6,789,232);
 		numbers.stream().forEach(element -> System.out.println(element));
+		System.out.println(numbers.stream().reduce(0, (number1, number2) -> number1 + number2));
 	}
 }
