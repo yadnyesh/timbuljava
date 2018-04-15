@@ -1,5 +1,11 @@
 package io.generics;
 
 public class GenericRunner {
-	MyCustomList list = new MyCustomList();
+	
+	
+	public static void main(String[] args) {
+		MyCustomList list = new MyCustomList();
+		list.addElement("Yadnyesh");
+		System.out.println(list);
+	}
 }

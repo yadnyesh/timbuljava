@@ -14,5 +14,9 @@ public class MyCustomList {
 		list.remove(element);
 	}
 	
+	@Override
+	public String toString() {
+		return "MyCustomList{" + "list=" + list + '}';
+	}
 }
 
