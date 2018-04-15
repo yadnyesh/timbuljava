@@ -19,7 +19,17 @@ public class MapRunner {
 		}
 		System.out.println(occurances);
 		
-		
+		Map<String, Integer> stringOccurances = new HashMap<>();
+		String[] words = str.split(" ");
+		for(String word:words){
+			Integer integer = stringOccurances.get(word);
+			if(integer == null){
+				stringOccurances.put(word,1);
+			} else {
+				stringOccurances.put(word,integer+1);
+			}
+		}
+		System.out.println(stringOccurances);
 		
 	}
 }
