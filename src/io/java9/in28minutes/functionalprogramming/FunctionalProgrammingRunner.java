@@ -5,7 +5,7 @@ import java.util.List;
 public class FunctionalProgrammingRunner {
 	
 	private static void printWithFP(List<String> list){
-		list.stream().forEach(element -> System.out.println(element));
+		list.stream().forEach(element -> System.out.println("element -> " + element));
 	}
 	
 	public static void main(String[] args) {
