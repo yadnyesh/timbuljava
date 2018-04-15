@@ -7,7 +7,7 @@ public class MethodReferencesRunner {
 	public static void main(String[] args) {
 		List.of("Ant", "Bat", "Cat", "Dog", "Element")
 				.stream()
-				.map(s -> s.length())
+				.map(String::length)
 				.forEach(System.out::println);
 	}
 }
