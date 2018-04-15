@@ -17,5 +17,8 @@ public class FunctionalProgrammingRunner {
 	public static void main(String[] args) {
 		List<String> list = List.of("Appple", "Orange", "Banana", "Cat", "Dog", "Bat");
 		printWithFPFiltering(list);
+		
+		List<Integer> numbers = List.of(1,2,3,4,5,6,789,232);
+		numbers.stream().forEach(element -> System.out.println(element));
 	}
 }
