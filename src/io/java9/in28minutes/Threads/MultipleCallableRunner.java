@@ -1,5 +1,29 @@
 package io.java9.in28minutes.Threads;
 
-public class MultipleCallableRunner {
+import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
+public class MultipleCallableRunner {
+	
+	public static void main(String[] args) throws InterruptedException {
+		ExecutorService executorService = Executors.newFixedThreadPool(1);
+		List<CallableTask> callableTasks = List.of(new CallableTask("in28minutes"), new CallableTask("java"), new CallableTask("postgresql"));
+		List<Future<String>> in28minutes = executorService.invokeAll(callableTasks);
+		in28minutes.stream().map(n -> {
+			try {
+				return n.get();
+			} catch(InterruptedException e) {
+				e.printStackTrace();
+				return null;
+			} catch(ExecutionException e) {
+				e.printStackTrace();
+				return null;
+			}
+		}).forEach(System.out::println);
+		executorService.shutdown();
+		
+	}
 }
