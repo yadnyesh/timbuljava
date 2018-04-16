@@ -9,5 +9,11 @@ public class ExecutorServiceRunner {
 		ExecutorService executorService = Executors.newSingleThreadExecutor();
 		executorService.execute(new Task1());
 		executorService.execute(new Thread(new Task2()));
+		
+		System.out.println("Task 3 kicked off");
+		for (int i = 301; i <=399; i++) {
+			System.out.print(i + " " );
+		}
+		System.out.println("\nTask 3 Done! ");
 	}
 }
