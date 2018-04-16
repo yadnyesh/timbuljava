@@ -18,10 +18,10 @@ public class ClientTest {
 		}
 	}
 	
-	private void calculateExtraBenefits(int age) throws InvalidAgeException{
+	private void calculateExtraBenefits(int age) {
 		if (age < 60){
 			System.out.println("Benefits not applicable");
-			//throw new InvalidAgeException(age);
+			throw new InvalidAgeException(age);
 		} else {
 			System.out.println("Benefits Extended!");
 		}
