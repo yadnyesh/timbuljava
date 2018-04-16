@@ -3,6 +3,7 @@ package io.java9.in28minutes.Threads;
 
 class Task1 extends Thread {
 	public void run() {
+		System.out.println("Task 1 started");
 		for (int i = 101; i <=199; i++) {
 			System.out.print(i + " " );
 		}
@@ -15,7 +16,7 @@ public class ThreadBasicsRunner {
 	public static void main(String[] args) {
 		
 		Task1 task1 = new Task1();
-		task1.run();
+		task1.start();
 		
 		for (int i = 201; i <=299; i++) {
 			System.out.print(i + " " );
