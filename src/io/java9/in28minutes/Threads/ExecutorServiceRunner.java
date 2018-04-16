@@ -29,6 +29,10 @@ public class ExecutorServiceRunner {
 		executorService.execute(new Task(2));
 		executorService.execute(new Task(3));
 		executorService.execute(new Task(4));
+		executorService.execute(new Task(5));
+		executorService.execute(new Task(6));
+		executorService.execute(new Task(7));
+		executorService.execute(new Task(8));
 		
 //		System.out.println("Task 3 kicked off");
 //		for (int i = 301; i <=399; i++) {
