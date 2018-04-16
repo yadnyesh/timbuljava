@@ -12,7 +12,7 @@ class CallableTask implements Callable<String>{
 	
 	@Override
 	public String call() throws Exception {
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		return "Hello " + name;
 	}
 }
