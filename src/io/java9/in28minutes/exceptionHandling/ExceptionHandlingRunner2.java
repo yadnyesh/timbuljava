@@ -17,7 +17,10 @@ public class ExceptionHandlingRunner2 {
 			String str = null;
 			str.length();
 			System.out.println("Method 2 completed");
-		} catch(Exception ex){
+		} catch(NullPointerException ex){
+			System.out.println("Null pointer exception");
+			ex.printStackTrace();
+		}catch(Exception ex){
 			ex.printStackTrace();
 		}
 	}
