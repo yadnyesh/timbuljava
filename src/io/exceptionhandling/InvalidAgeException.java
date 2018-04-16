@@ -4,7 +4,7 @@ public class InvalidAgeException extends RuntimeException{
 	private int age;
 	
 	public InvalidAgeException() {
-		super();
+		super("Invalid Age");
 	}
 	
 	public InvalidAgeException(int age) {
