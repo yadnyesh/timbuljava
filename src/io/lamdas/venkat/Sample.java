@@ -19,5 +19,8 @@ public class Sample {
 		newString.add("Test4");
 		newString.add("Test5");
 		
+		newString.stream()
+				.forEach(System.out::println);
+		
 	}
 }
