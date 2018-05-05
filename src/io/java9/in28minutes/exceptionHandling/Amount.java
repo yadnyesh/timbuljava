@@ -28,7 +28,11 @@ class ThrowingExceptionRunner {
 	public static void main(String[] args) {
 		Amount amount1 = new Amount("USD", 10);
 		Amount amount2 = new Amount("EUR", 20);
-		amount1.add(amount2);
+		try {
+			amount1.add(amount2);
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 		System.out.println(amount1);
 	}
 }
