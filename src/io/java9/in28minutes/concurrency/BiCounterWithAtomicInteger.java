@@ -1,32 +1,29 @@
 package io.java9.in28minutes.concurrency;
 
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class BiCounterWithAtomicInteger {
-	private int i = 0;
-	private int j = 0;
+	private AtomicInteger i = new AtomicInteger();
+	private AtomicInteger j = new AtomicInteger();
 	
 	Lock lockForI = new ReentrantLock();
 	Lock lockForJ = new ReentrantLock();
 	
 	public void incrementI() {
-		lockForI.lock();
-		i++;
-		lockForI.unlock();
+		i.incrementAndGet();
 	}
 	
 	public int getI() {
-		return i;
+		return i.get();
 	}
 	
 	public void incrementJ() {
-		lockForJ.lock();
-		j++;
-		lockForJ.unlock();
+		i.incrementAndGet()
 	}
 	
 	public int getJ() {
-		return j;
+		return j.get();
 	}
 }
