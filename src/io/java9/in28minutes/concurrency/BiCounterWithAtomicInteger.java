@@ -20,7 +20,7 @@ public class BiCounterWithAtomicInteger {
 	}
 	
 	public void incrementJ() {
-		i.incrementAndGet()
+		i.incrementAndGet();
 	}
 	
 	public int getJ() {
