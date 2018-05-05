@@ -10,6 +10,9 @@ public class Amount {
 	}
 	
 	public void add(Amount amount){
+		if(!this.currency.equals(amount.currency)){
+			throw new RuntimeException("Currencies don't match");
+		}
 		this.amount += amount.amount;
 	}
 	
@@ -27,5 +30,6 @@ class ThrowingExceptionRunner {
 		Amount amount1 = new Amount("USD", 10);
 		Amount amount2 = new Amount("USD", 20);
 		amount1.add(amount2);
+		System.out.println(amount1);
 	}
 }
