@@ -10,7 +10,7 @@ public class BiCounter {
 	Lock lockForI = new ReentrantLock();
 	Lock lockForJ = new ReentrantLock();
 	
-	synchronized public void incrementI() {
+	public void incrementI() {
 		lockForI.lock();
 		i++;
 		lockForI.unlock();
@@ -20,7 +20,7 @@ public class BiCounter {
 		return i;
 	}
 	
-	synchronized public void incrementJ() {
+	public void incrementJ() {
 		lockForJ.lock();
 		j++;
 		lockForJ.unlock();
