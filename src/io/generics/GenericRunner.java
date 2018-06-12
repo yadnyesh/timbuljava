@@ -21,6 +21,6 @@ public class GenericRunner {
 		MyCustomList<Integer> intlist = new MyCustomList<>();
 		intlist.addElement(Integer.valueOf(1));
 		System.out.println(intlist);
-		System.out.println(sumOfNumberList(List.of(1,2,3,4,5)));
+//		System.out.println(sumOfNumberList(List.of(1,2,3,4,5)));
 	}
 }
