@@ -8,6 +8,13 @@ public class Main {
 		Thread anotherThread = new AnotherThread();
 		anotherThread.start();
 		
+		new Thread() {
+			public void run() {
+				System.out.println("Hello from Anonymous class");
+			}
+		}.start();
+		
+		
 		System.out.println("Again from the Main Thread");
 	}
 }
