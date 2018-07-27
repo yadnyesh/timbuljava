@@ -1,4 +1,4 @@
-package io.pljava8.streamandlambda;
+package io.pljava8.streamandlambda.section1;
 
 public class Person {
 	String firstName;
