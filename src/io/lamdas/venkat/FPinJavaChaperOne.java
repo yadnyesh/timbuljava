@@ -9,11 +9,6 @@ public class FPinJavaChaperOne {
 	
 	public static void main(String[] args) {
 		final List<String> friends = Arrays.asList("Brian", "Nate", "Neal", "Raju", "Sara", "Scott");
-		friends.forEach(new Consumer<String>() {
-			@Override
-			public void accept(String s) {
-				System.out.println(s);
-			}
-		});
+		friends.forEach(name -> System.out.println(name));
 	}
 }
