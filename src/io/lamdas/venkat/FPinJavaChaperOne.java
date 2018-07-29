@@ -9,6 +9,6 @@ public class FPinJavaChaperOne {
 	
 	public static void main(String[] args) {
 		final List<String> friends = Arrays.asList("Brian", "Nate", "Neal", "Raju", "Sara", "Scott");
-		friends.forEach(name -> System.out.println(name));
+		friends.forEach(System.out::println);
 	}
 }
