@@ -27,6 +27,7 @@ public class FPinJavaChaperOne {
 		final Function<String, Predicate<String>> startsWithLetter = letter -> name -> name.startsWith(letter);
 		final List<String> friends = Arrays.asList("Brian", "Nate", "Neal", "Raju", "Sara", "Scott");
 		pickName(friends, "N");
+		pickName(friends, "Y");
 		friends.forEach(System.out::println);
 		friends.stream().map(String::toUpperCase)
 		.forEach(System.out::println);
