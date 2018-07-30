@@ -19,6 +19,7 @@ public class FPinJavaChaperOne {
 											.filter(name -> name.startsWith(startingLetter))
 											.findFirst();
 		System.out.println(String.format("Name starting with %s: %s", startingLetter, foundName.orElse("No Name Found")));
+		foundName.ifPresent(name -> System.out.println("The name is: " + name));
 	}
 	
 	public static void main(String[] args) {
