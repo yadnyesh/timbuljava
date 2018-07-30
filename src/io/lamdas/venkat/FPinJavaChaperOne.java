@@ -16,10 +16,7 @@ public class FPinJavaChaperOne {
 	
 	public static void main(String[] args) {
 		
-		final Function<String, Predicate<String>> startsWithLetter = (String letter) -> {
-			Predicate<String> checkIfStartsWith= (String name) -> name.startsWith(letter);
-			return checkIfStartsWith;
-		};
+		final Function<String, Predicate<String>> startsWithLetter = letter -> name -> name.startsWith(letter);
 		
 		final List<String> friends = Arrays.asList("Brian", "Nate", "Neal", "Raju", "Sara", "Scott");
 		friends.forEach(System.out::println);
