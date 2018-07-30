@@ -41,5 +41,7 @@ public class FPinJavaChaperOne {
 				.filter(startsWithLetter.apply("N"))
 				.collect(Collectors.toList());
 		friendsWithN.forEach(System.out::println);
+		
+		System.out.println("Total number of Characters in all names: " + friends.stream().mapToInt(name -> name.length()).sum());
 	}
 }
