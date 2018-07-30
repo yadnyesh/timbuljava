@@ -1,6 +1,7 @@
 package io.lamdas.venkat;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
@@ -52,5 +53,6 @@ public class FPinJavaChaperOne {
 								   .reduce("Steve", (name1, name2) -> name1.length() > name2.length() ? name1 : name2);
 		System.out.println("The result of Steve or longer is, " + steveOrLonger);
 		System.out.println(String.join(", ", friends));
+		System.out.println(friends.stream().map(String::toUpperCase).collect(Collectors.joining(", ")));
 	}
 }
