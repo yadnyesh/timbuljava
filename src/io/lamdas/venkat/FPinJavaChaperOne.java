@@ -47,5 +47,9 @@ public class FPinJavaChaperOne {
 		final Optional<String> longestName = friends.stream()
 				                   .reduce((name1, name2) -> name1.length() > name2.length() ? name1 : name2);
 		longestName.ifPresent(name -> System.out.println(String.format("And the longest name is... %s", name)));
+		
+		final String steveOrLonger = friends.stream()
+								   .reduce("Steve", (name1, name2) -> name1.length() > name2.length() ? name1 : name2);
+		System.out.println("The result of Steve or longer is, " + steveOrLonger);
 	}
 }
