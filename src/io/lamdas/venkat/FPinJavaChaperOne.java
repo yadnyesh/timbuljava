@@ -12,5 +12,7 @@ public class FPinJavaChaperOne {
 		friends.forEach(System.out::println);
 		friends.stream().map(name -> name.toUpperCase())
 		.forEach(System.out::println);
+		friends.stream().map(name -> name.length())
+		.forEach(length -> System.out.println("Length of the string is: " + length));
 	}
 }
