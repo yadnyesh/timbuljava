@@ -9,6 +9,10 @@ import java.util.stream.Collectors;
 
 public class FPinJavaChaperOne {
 	
+	public static Predicate<String> checkStartsWith(final String letter) {
+		return name -> name.startsWith(letter);
+	}
+	
 	public static void main(String[] args) {
 		final List<String> friends = Arrays.asList("Brian", "Nate", "Neal", "Raju", "Sara", "Scott");
 		friends.forEach(System.out::println);
@@ -20,7 +24,7 @@ public class FPinJavaChaperOne {
 		final Predicate<String> startsWithN = name -> name.startsWith("N");
 		
 		final List<String> friendsWithN = friends.stream()
-				.filter(startsWithN)
+				.filter(checkStartsWith("N"))
 				.collect(Collectors.toList());
 		friendsWithN.forEach(System.out::println);
 	}
