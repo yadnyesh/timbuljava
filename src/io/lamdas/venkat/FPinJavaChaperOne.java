@@ -43,5 +43,9 @@ public class FPinJavaChaperOne {
 		friendsWithN.forEach(System.out::println);
 		
 		System.out.println("Total number of Characters in all names: " + friends.stream().mapToInt(name -> name.length()).sum());
+		
+		final Optional<String> longestName = friends.stream()
+				                   .reduce((name1, name2) -> name1.length() > name2.length() ? name1 : name2);
+		longestName.ifPresent(name -> System.out.println(String.format("And the longest name is... %s", name)));
 	}
 }
