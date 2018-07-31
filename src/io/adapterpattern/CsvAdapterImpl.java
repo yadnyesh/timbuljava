@@ -4,10 +4,15 @@ import org.w3c.dom.Text;
 
 public class CsvAdapterImpl implements TextFormattable {
 	
+	CsvFormattable csvFormattable;
 	
+	public CsvAdapterImpl(CsvFormattable csvFormattable) {
+		this.csvFormattable = csvFormattable;
+	}
 	
 	@Override
 	public String formatText(String text) {
-		return null;
+		String formattedText = csvFormattable.formatCsvText(text);
+		return formattedText;
 	}
 }
