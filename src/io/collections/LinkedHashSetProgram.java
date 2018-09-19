@@ -11,7 +11,7 @@ public class LinkedHashSetProgram {
 		h.add("E");
 		h.add("10");
 		h.add("G");
-		System.out.println(h.add("G"));
+		System.out.println(h.add("Y"));
 		System.out.println(h);
 	}
 }

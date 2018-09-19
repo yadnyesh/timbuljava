@@ -1,6 +1,7 @@
 package io.streams;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -12,6 +13,5 @@ public class JavaStreams {
 				.map(x -> x*x)
 				.average()
 				.ifPresent(System.out::println);
-				
 	}
 }
