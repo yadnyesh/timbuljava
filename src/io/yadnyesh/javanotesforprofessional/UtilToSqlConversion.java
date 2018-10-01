@@ -2,6 +2,7 @@ package io.yadnyesh.javanotesforprofessional;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 
 public class UtilToSqlConversion {
 	
@@ -12,6 +13,11 @@ public class UtilToSqlConversion {
 		System.out.println("java.sql.Date is : " + utilDate);
 		DateFormat df = new SimpleDateFormat("dd/MM/YYYY - hh:mm:ss");
 		System.out.println("Formatted date is "  + df.format(utilDate));
+		
+		
+		// LocalDateTime
+		LocalDateTime localDateTime = LocalDateTime.now();
+		System.out.println(localDateTime.toLocalDate());
 	}
 	
 	private static java.sql.Date convert (java.util.Date utilDate) {
