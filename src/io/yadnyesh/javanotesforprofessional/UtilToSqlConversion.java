@@ -3,6 +3,7 @@ package io.yadnyesh.javanotesforprofessional;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 public class UtilToSqlConversion {
 	
@@ -18,6 +19,10 @@ public class UtilToSqlConversion {
 		// LocalDateTime
 		LocalDateTime localDateTime = LocalDateTime.now();
 		System.out.println(localDateTime.toLocalDate());
+		
+		Date today = new Date();
+		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMM-yy");
+		System.out.println("Print Date: " + dateFormat.format(today));
 	}
 	
 	private static java.sql.Date convert (java.util.Date utilDate) {
