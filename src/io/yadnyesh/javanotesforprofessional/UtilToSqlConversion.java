@@ -13,4 +13,7 @@ public class UtilToSqlConversion {
 		java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
 		return sqlDate;
 	}
+	
+	// java.util.Date has both Date and Time
+	// java.sql.Date has only Date
 }
