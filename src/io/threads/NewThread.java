@@ -4,7 +4,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /*
- Executor service uses Blocking Queue
+ Executor service uses Blocking Queue, since it is thread safe
  */
 
 public class NewThread {
