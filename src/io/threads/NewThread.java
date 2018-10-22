@@ -3,7 +3,9 @@ package io.threads;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import static java.lang.Thread.sleep;
+/*
+ Executor service uses Blocking Queue
+ */
 
 public class NewThread {
 	
