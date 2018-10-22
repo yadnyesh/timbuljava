@@ -10,6 +10,8 @@ import java.util.concurrent.Executors;
 public class NewThread {
 	
 	public static void main(String[] args) {
+		int cpuCoreCount = Runtime.getRuntime().availableProcessors();
+		System.out.println("Number of processor cores: " + cpuCoreCount);
 		ExecutorService service = Executors.newFixedThreadPool(10);
 		for(int i =0; i < 100; i++) {
 			service.execute(new Task());
