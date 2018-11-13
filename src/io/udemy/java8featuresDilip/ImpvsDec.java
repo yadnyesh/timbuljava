@@ -1,5 +1,7 @@
 package io.udemy.java8featuresDilip;
 
+import java.util.stream.IntStream;
+
 public class ImpvsDec {
 	
 	public static void main(String[] args) {
@@ -15,6 +17,9 @@ public class ImpvsDec {
 		
 		
 //		Declarative - What
-	
+		int sum1 = IntStream.rangeClosed(0,100)
+				.sum();
+		
+		System.out.println("Sum using Declarative style: " + sum1);
 	}
 }
