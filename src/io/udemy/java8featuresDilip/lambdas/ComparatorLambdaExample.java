@@ -1,6 +1,7 @@
 package io.udemy.java8featuresDilip.lambdas;
 
 import java.util.Comparator;
+import java.util.stream.IntStream;
 
 public class ComparatorLambdaExample {
 	
@@ -16,6 +17,8 @@ public class ComparatorLambdaExample {
 			}
 		};
 		
-		System.out.println("Result of the Lambda comparator is: " + comparator.compare(3,2));
+		System.out.println("Result of the comparator is: " + comparator.compare(3,2));
+		
+		Comparator<Integer> comparatorLambda = (Integer a, Integer b) -> {return a.compareTo(b);};
 	}
 }
