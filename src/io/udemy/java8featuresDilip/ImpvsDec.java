@@ -18,6 +18,7 @@ public class ImpvsDec {
 		
 //		Declarative - What
 		int sum1 = IntStream.rangeClosed(0,100)
+				.parallel()
 				.sum();
 		
 		System.out.println("Sum using Declarative style: " + sum1);
