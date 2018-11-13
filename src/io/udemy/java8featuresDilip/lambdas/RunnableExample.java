@@ -24,5 +24,6 @@ public class RunnableExample {
 		};
 		
 		new Thread(runnablelambda).start();
+		new Thread(()-> System.out.println("Inside single line lambda")).start();
 	}
 }
