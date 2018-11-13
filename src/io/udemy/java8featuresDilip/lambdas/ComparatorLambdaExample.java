@@ -15,5 +15,7 @@ public class ComparatorLambdaExample {
 				return o1.compareTo(o2);
 			}
 		};
+		
+		System.out.println("Result of the Lambda comparator is: " + comparator.compare(3,2));
 	}
 }
