@@ -1,16 +1,28 @@
 package io.udemy.java8featuresDilip.data;
 
+import java.util.List;
+
 public class Student {
 	private String name;
-	private String gradeLevel;
-	private String gpa;
+	private int gradeLevel;
+	private double gpa;
 	private String gender;
+	List<String> activities;
 	
-	public Student(String name, String gradeLevel, String gpa, String gender) {
+	public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities) {
 		this.name = name;
 		this.gradeLevel = gradeLevel;
 		this.gpa = gpa;
 		this.gender = gender;
+		this.activities = activities;
+	}
+	
+	public List<String> getActivities() {
+		return activities;
+	}
+	
+	public void setActivities(List<String> activities) {
+		this.activities = activities;
 	}
 	
 	public String getName() {
@@ -21,19 +33,19 @@ public class Student {
 		this.name = name;
 	}
 	
-	public String getGradeLevel() {
+	public int getGradeLevel() {
 		return gradeLevel;
 	}
 	
-	public void setGradeLevel(String gradeLevel) {
+	public void setGradeLevel(int gradeLevel) {
 		this.gradeLevel = gradeLevel;
 	}
 	
-	public String getGpa() {
+	public double getGpa() {
 		return gpa;
 	}
 	
-	public void setGpa(String gpa) {
+	public void setGpa(double gpa) {
 		this.gpa = gpa;
 	}
 	
@@ -47,6 +59,6 @@ public class Student {
 	
 	@Override
 	public String toString() {
-		return "Student{" + "name='" + name + '\'' + ", gradeLevel='" + gradeLevel + '\'' + ", gpa='" + gpa + '\'' + ", gender='" + gender + '\'' + '}';
+		return "Student{" + "name='" + name + '\'' + ", gradeLevel='" + gradeLevel + '\'' + ", gpa='" + gpa + '\'' + ", gender='" + gender + '\'' + ", activities=" + activities + '}';
 	}
 }
