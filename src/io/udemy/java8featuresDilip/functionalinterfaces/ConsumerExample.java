@@ -10,10 +10,17 @@ import java.util.function.Consumer;
 
 public class ConsumerExample {
 	
-	static void printName() {
+	public static void printName() {
 		Consumer<Student> c2 = (student) -> System.out.println(student);
 		List<Student> studentList = StudentDataBase.getAllStudents();
 		studentList.forEach(c2);
+	}
+	
+	public static void printNameAndActivities() {
+		Consumer<Student> consumerStudentName = (student) -> System.out.print(student.getName());
+		Consumer<Student> consumerStudentActivities = (student) -> System.out.println(student.getActivities());
+		List<Student> studentList = StudentDataBase.getAllStudents();
+		studentList.forEach(consumerStudentName.andThen(consumerStudentActivities));
 	}
 	
 	
@@ -21,6 +28,7 @@ public class ConsumerExample {
 		Consumer<String> consumerString = (s) -> System.out.println(s.toUpperCase());
 		consumerString.accept("yadnyesh");
 		printName();
+		printNameAndActivities();
 		
 	}
 }
