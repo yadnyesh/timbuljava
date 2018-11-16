@@ -11,6 +11,10 @@ public class FunctionExample {
 	public static void main(String[] args) {
 		
 		System.out.println("Result is : " + addDefaultString.apply("yadnyesh"));
+		System.out.println("Result of compose is: " + firstFunction.compose(addDefaultString).apply("yadnyesh"));
+		System.out.println("Result of first compose is: " + addDefaultString.compose(firstFunction).apply("yadnyesh"));
+		System.out.println("Result of andThen is: " + addDefaultString.andThen(firstFunction).apply("yadnyesh"));
+		
 	
 	}
 }
