@@ -24,7 +24,7 @@ public class ConsumerExample {
 	
 	public static void printNameAndActivitiesUsingCondition() {
 		studentList.forEach(student -> {
-			if(student.getGradeLevel() >= 3) {
+			if(student.getGradeLevel() >= 3 && student.getGpa() >=3.9) {
 				consumerStudentName.andThen(consumerStudentActivities);
 			}
 		});
@@ -32,9 +32,9 @@ public class ConsumerExample {
 	
 	public static void main(String[] args) {
 		Consumer<String> consumerString = (s) -> System.out.println(s.toUpperCase());
-		consumerString.accept("yadnyesh");
-		printName();
-		printNameAndActivities();
+		//consumerString.accept("yadnyesh");
+		//printName();
+		//printNameAndActivities();
 		printNameAndActivitiesUsingCondition();
 		
 	}
