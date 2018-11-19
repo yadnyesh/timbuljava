@@ -9,7 +9,7 @@ import java.util.function.Consumer;
 public class ConsumerMethodReferenceExample {
 	
 	
-	static Consumer<Student> consumerStudent = (student) -> System.out.println(student);
+	static Consumer<Student> consumerStudent = System.out::println;
 	static Consumer<Student> consumerStudentName = (student) -> System.out.print(student.getName());
 	static Consumer<Student> consumerStudentActivities = (student) -> System.out.println(student.getActivities());
 	static List<Student> studentList = StudentDataBase.getAllStudents();
