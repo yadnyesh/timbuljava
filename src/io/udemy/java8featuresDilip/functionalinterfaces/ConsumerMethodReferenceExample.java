@@ -10,8 +10,6 @@ public class ConsumerMethodReferenceExample {
 	
 	
 	static Consumer<Student> consumerStudent = System.out::println;
-	static Consumer<Student> consumerStudentName = (student) -> System.out.print(student.getName());
-	static Consumer<Student> consumerStudentActivities = (student) -> System.out.println(student.getActivities());
 	static List<Student> studentList = StudentDataBase.getAllStudents();
 	
 	public static void main(String[] args) {
