@@ -11,7 +11,7 @@ public class FunctionMethodReferenceExample {
 	
 	public static void main(String[] args) {
 		System.out.println("Using Lambda: " + toUpperCaseLambda.apply("Yadnyesh"));
-		System.out.println("Using Method Reference: " + toUpperCaseLambda.apply("Yadnyesh"));
+		System.out.println("Using Method Reference: " + toUpperCaseLambda.apply("Yadnyesh is great"));
 		
 	}
 
