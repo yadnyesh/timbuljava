@@ -10,11 +10,13 @@ public class ConsumerMethodReferenceExample {
 	
 	
 	static Consumer<Student> consumerStudent = System.out::println;
+	static Consumer<Student> consumerStudentMethodInterface = Student::printListOfActivities;
 	static List<Student> studentList = StudentDataBase.getAllStudents();
 	
 	public static void main(String[] args) {
 		
 		StudentDataBase.getAllStudents().forEach(consumerStudent);
+		studentList.forEach(consumerStudentMethodInterface);
 		
 	}
 

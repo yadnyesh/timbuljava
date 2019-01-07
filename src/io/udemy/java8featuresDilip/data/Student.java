@@ -17,6 +17,10 @@ public class Student {
 		this.activities = activities;
 	}
 	
+	public void printListOfActivities(){
+		System.out.println(activities);
+	}
+	
 	public List<String> getActivities() {
 		return activities;
 	}
