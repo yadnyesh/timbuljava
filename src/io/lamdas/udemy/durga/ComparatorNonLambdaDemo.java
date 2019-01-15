@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.stream.Collectors;
 
-public class ComparatorDemo {
+public class ComparatorNonLambdaDemo {
 	
 	public static void main(String[] args) {
 		ArrayList<Integer> arrayList = new ArrayList<Integer>();
