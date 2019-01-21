@@ -20,6 +20,10 @@ public class TreeSetDemo1 {
 		TreeMap<Integer, String> treeMap = new TreeMap<Integer, String>();
 		treeMap.put(100, "Yadnyesh");
 		treeMap.put(101, "Sunny");
+		treeMap.put(600, "Bunny");
+		treeMap.put(200, "Yunny");
+		treeMap.put(450, "Punny");
+		System.out.println(treeMap);
 		
 		
 	}
