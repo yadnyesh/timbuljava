@@ -1,10 +1,20 @@
 package io.lamdas.udemy.durga;
 
 public class AnonymousInnerClass {
-	Runnable r = new Runnable() {
-		@Override
-		public void run() {
-			System.out.println("Hurray!");
-		}
-	};
+
+	
+	public static void main(String[] args) {
+		Runnable r = new Runnable() {
+			@Override
+			public void run() {
+				for (int i = 0; i < 10; i++) {
+					System.out.println("Child Thread");
+				}
+			}
+		};
+		Thread t = new Thread(r);
+		t.start();
+	}
+	
+	
 }
