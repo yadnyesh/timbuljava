@@ -11,12 +11,9 @@ public class AnonymousInnerClass {
 	
 	public void myPrintClass()
 	{
-		MyInterface myInterface = new MyInterface() {
+		MyInterface myInterface = () -> {
 			int x = 999;
-			@Override
-			public void printX() {
 				System.out.println(this.x);
-			}
 		};
 		myInterface.printX();
 	}
