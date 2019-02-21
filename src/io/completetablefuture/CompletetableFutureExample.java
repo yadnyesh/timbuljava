@@ -1,7 +1,5 @@
 package io.completetablefuture;
 
-import javafx.concurrent.Task;
-
 import java.util.Random;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
@@ -21,7 +19,6 @@ public class CompletetableFutureExample {
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
-		
 	}
 	
 	static class Task implements Callable<Integer> {
