@@ -7,5 +7,8 @@ public class TestPredicateImpl {
 	public static void main(String[] args) {
 		Predicate<Integer> P = i -> i > 10;
 		System.out.println(P.test(100));
+		
+		Predicate<String> stringLengthPredicate = s -> s.length() > 5;
+		System.out.println(stringLengthPredicate.test("yadnyesh"));
 	}
 }
