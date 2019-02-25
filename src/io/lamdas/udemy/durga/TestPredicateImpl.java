@@ -17,5 +17,33 @@ public class TestPredicateImpl {
 		ArrayList<Integer> arrayListInteger = new ArrayList<>();
 		arrayListInteger.add(10);
 		System.out.println(checkForEmptyCollection.test(arrayListInteger));
+		
+		int[] myIntArray = {0, 5, 10, 15, 20, 25, 30};
+		Predicate<Integer> numberGreaterThanTen = i -> i > 10;
+		Predicate<Integer> checkForEvenNumber = i -> i % 2 == 0;
+		
+		System.out.println("Numbers greater than 10 are");
+		myFunction(numberGreaterThanTen, myIntArray);
+		
+		System.out.println("Even numbers are");
+		myFunction(checkForEvenNumber, myIntArray);
+		
+		System.out.println("Numbers NOT greater than 10 are");
+		myFunction(numberGreaterThanTen.negate(), myIntArray);
+		
+		System.out.println("Numbers greater than 10 AND Even are");
+		myFunction(numberGreaterThanTen.and(checkForEvenNumber), myIntArray);
+		
+		System.out.println("Numbers greater than 10 OR Even are");
+		myFunction(numberGreaterThanTen.or(checkForEvenNumber), myIntArray);
+		
+	}
+	
+	static void myFunction(Predicate predicate, int[] inputArray) {
+		for (int y : inputArray) {
+			if(predicate.test(y)) {
+				System.out.println(y);
+			}
+		}
 	}
 }
